@@ -1,0 +1,14 @@
+.about {
+    padding: 0%;
+    background-image: url('src/components/images/Variant 6.svg');
+    background-size: cover; /* Ensure the image covers the whole container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 120vh; /* Ensure the section takes up the full viewport height */
+    color: white; /* Adjust text color to ensure readability over the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    text-align: center;
+  }
