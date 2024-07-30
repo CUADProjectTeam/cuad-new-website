@@ -1,17 +1,17 @@
-import React from 'react';
-import './Header.css';
+// src/components/Header.jsx
+//import React from 'react';
 
-const Header = () => {
+const Header = ({ setPage }) => {
   return (
     <header className="header">
-      <nav className="nav">
+      <nav>
         <ul>
-          <li><a href="./components/AboutPage.jsx">ABOUT</a></li>
-          <li><a href="#teams">TEAMS</a></li>
-          <li><a href="#members">MEMBERS</a></li>
-          <li><a href="#donate">DONATE</a></li>
-          <li><a href="#sponsors">SPONSORS</a></li>
-          <li><a href="#apply">APPLY</a></li>
+          <li><button onClick={() => setPage('about')}>About</button></li>
+          <li><button onClick={() => setPage('teams')}>Teams</button></li>
+          <li><button onClick={() => setPage('members')}>Members</button></li>
+          <li><button onClick={() => setPage('donate')}>Donate</button></li>
+          <li><button onClick={() => setPage('sponsors')}>Sponsors</button></li>
+          <li><button onClick={() => setPage('apply')}>Apply</button></li>
         </ul>
       </nav>
     </header>

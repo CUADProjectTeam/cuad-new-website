@@ -3,10 +3,10 @@ import './AboutPage.css';
 import Header from './Header';
 import Footer from './Footer';
 
-const About = () => {
+const AboutPage = () => {
   return (
     <section id="about" className="about">
-      <Header />
+      <Header/>
       <div className="overall-flex">
         <img className="bg" src="src/components/images/AboutPageDrone.png" alt="Drone" />
         <div className="cuad-container">
@@ -57,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;
