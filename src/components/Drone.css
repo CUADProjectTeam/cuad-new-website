@@ -1,5 +1,6 @@
 @import './styles.css';
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');
 
 .dynamic-section {
   padding: 20px;
@@ -77,6 +78,31 @@
 }
 
 .stat-item p {
-  font-size: 1.5vw;
-  /* color: #333; */
+  font-size: 1.3vw;
+}
+
+.dead-drones {
+  margin: 3vw;
+  padding: 0;
+}
+
+.graveyard-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.graveyard-section>.description {
+  padding-right: 0;
+}
+
+.graveyard-section h1 {
+  margin: 0;
+  font-size: 2.25em;
+}
+
+h2 {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 100;
+  font-size: 1.75em;
+  margin-top: .25em;
 }

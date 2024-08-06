@@ -1,4 +1,5 @@
 @import './styles.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
 
 .active-drones {
     display: flex;
@@ -36,4 +37,42 @@
 .small {
     width: .5vw;
     height: .5vw;
+}
+
+.title-card {
+    font-family: 'Lexend Deca', sans-serif;
+    height: 60vw;
+}
+
+.title-card img {
+    position: absolute;
+    height: auto;
+}
+
+.title-text {
+    transform: translate(5%, 160%);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80vw;
+}
+
+.title-text img {
+    margin-left: 2vw;
+    width: 15vw;
+}
+
+.title-text h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 18vw;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#graveyard {
+    font-family: 'Helvetica Neue, Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 4vw;
+    padding-left: 45px;
 }

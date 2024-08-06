@@ -16,13 +16,13 @@ const ImageCarousel = ({ images }) => {
 
     return (
         <div className="carousel">
-            <button className="carousel-button prev" onClick={prevSlide}>
+            {images.length > 1 && <button className="carousel-button prev" onClick={prevSlide}>
                 &#10094;
-            </button>
+            </button>}
             <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-            <button className="carousel-button next" onClick={nextSlide}>
+            {images.length > 1 && <button className="carousel-button next" onClick={nextSlide}>
                 &#10095;
-            </button>
+            </button>}
         </div>
     );
 };

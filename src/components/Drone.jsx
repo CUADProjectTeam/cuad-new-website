@@ -25,4 +25,18 @@ const Drone = ({ title, description, stats, images }) => {
         </section>
     );
 };
+
+export const DeadDrone = ({ title, description, date, images }) => {
+    return (
+        <section className="graveyard-section">
+            <div className='images'><ImageCarousel images={images} /></div>
+            <div className="description">
+                <h1>{title}</h1>
+                <h2>{date}</h2>
+                <p>{description}</p>
+            </div>
+        </section>
+    );
+}
+
 export default Drone;
