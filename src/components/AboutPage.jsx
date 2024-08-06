@@ -1,12 +1,9 @@
 import React from 'react';
 import './AboutPage.css';
-import Header from './Header';
-import Footer from './Footer';
 
 const AboutPage = () => {
   return (
     <section id="about" className="about">
-      <Header/>
       <div className="overall-flex">
         <img className="bg" src="src/components/images/AboutPageDrone.png" alt="Drone" />
         <div className="cuad-container">
@@ -52,7 +49,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

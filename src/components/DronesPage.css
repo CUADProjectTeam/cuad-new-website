@@ -1,0 +1,39 @@
+@import './styles.css';
+
+.active-drones {
+    display: flex;
+    flex-direction: row;
+}
+
+.drones {
+    flex-direction: column;
+    padding: 0;
+}
+
+.dot-lines {
+    padding-top: calc(20px + 1.5vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    padding-left: 2vw;
+    padding-bottom: 20px;
+}
+
+.line {
+    width: 2px;
+    height: calc(35vw + 3vw + 2vw + 2*20px);
+    background-color: var(--logo-red);
+}
+
+.dot {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: var(--logo-red);
+}
+
+.small {
+    width: .5vw;
+    height: .5vw;
+}

@@ -8,7 +8,7 @@ const Footer = () => {
                 <h1>Cornell University Autonomous Drone</h1>
                 <h5>This organization is a registered student organization of Cornell University.</h5>
                 <p>For Questions & Sponsorship Inquiries:</p>
-                <p>Contact <a class='email-link' href="mailto:cuautodrone@gmail.com">cuautodrone@gmail.com</a></p>
+                <p>Contact <a className='email-link' href="mailto:cuautodrone@gmail.com">cuautodrone@gmail.com</a></p>
             </div>
             <div className="footer-right">
                 <strong>Thank you for visiting!</strong>

@@ -1,0 +1,10 @@
+:root {
+    --accent-red: #E31E24;
+    --logo-red: #B42025;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: black;
+    word-break: break-word;
+}

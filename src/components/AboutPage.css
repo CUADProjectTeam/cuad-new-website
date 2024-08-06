@@ -1,8 +1,4 @@
-
-.about {
-  color: rgb(0, 0, 0);
-  font-family: Arial, sans-serif;
-}
+@import './styles.css';
 
 .bg {
   width: 55%;
@@ -72,7 +68,8 @@
   padding: 20px 30px;
   position: relative;
   border-radius: 6px;
-  margin-left: 40px; /* Adjust margin for left alignment */
+  margin-left: 40px;
+  /* Adjust margin for left alignment */
 }
 
 .right-content {
@@ -83,8 +80,9 @@
 .right-content .content {
   margin-left: 0;
 }
-.h2{
-  font-size:50px;
+
+.h2 {
+  font-size: 50px;
 }
 
 * {
@@ -112,7 +110,8 @@
     align-items: center;
   }
 
-  .timeline, .right-content {
+  .timeline,
+  .right-content {
     width: 100%;
   }
 

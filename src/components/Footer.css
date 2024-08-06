@@ -1,3 +1,5 @@
+@import './styles.css';
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -6,7 +8,8 @@
     background-color: #fff;
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,11 +18,13 @@
 .footer-left h1 {
     font-family: Helvetica;
 }
-h5{
-    padding:-10%;
+
+h5 {
+    padding: -10%;
 }
 
-.footer-left p, .footer-right p {
+.footer-left p,
+.footer-right p {
     margin: 5px 0;
 }
 
