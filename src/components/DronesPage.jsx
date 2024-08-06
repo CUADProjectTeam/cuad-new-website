@@ -52,7 +52,7 @@ const DronesPage = () => {
             </div>
             <div className='active-drones'>
                 <ul className='dot-lines'>
-                    {Object.entries(drones).map(([_k, _v], index) => {
+                    {Object.entries(drones).map(([], index) => {
                         return <>
                             <div key={`${index}-dot`} className='dot'></div>
                             <div key={`${index}-line`} className='line'></div>

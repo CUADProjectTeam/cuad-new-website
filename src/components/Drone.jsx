@@ -1,6 +1,7 @@
 import React from 'react';
 import './Drone.css';
 import ImageCarousel from './ImageCarousel';
+import Stats from './Stats'
 
 const Drone = ({ title, description, stats, images }) => {
     return (
@@ -12,14 +13,8 @@ const Drone = ({ title, description, stats, images }) => {
                 <div className='images'><ImageCarousel images={images} /></div>
                 <div className="description">
                     <p>{description}</p>
-                    <div className="stats-container">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="stat-item">
-                                <h1>{stat.value}</h1>
-                                <p>{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <Stats stats={stats} align="center" />
+
                 </div>
             </div>
         </section>

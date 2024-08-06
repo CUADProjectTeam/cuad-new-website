@@ -33,15 +33,6 @@ h5 {
     text-align: right;
 }
 
-.email-link {
-    color: darkred;
-    transition: color 0.3s ease;
-}
-
-.email-link:hover {
-    color: red;
-}
-
 .social-icons {
     display: flex;
     gap: 10px;

@@ -1,0 +1,38 @@
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.center-stats {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.left-stats {
+    justify-content: left;
+    text-align: left;
+}
+
+.stat-item {
+    padding-top: 4%;
+    padding-bottom: 0;
+    background-color: #fff;
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.stat-item h1 {
+    word-break: keep-all;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    font-size: 9vw;
+    margin: 0;
+    /* margin-bottom: 1.5vw; */
+    color: var(--accent-red);
+}
+
+.stat-item p {
+    font-size: 1.3vw;
+    margin: 0;
+}

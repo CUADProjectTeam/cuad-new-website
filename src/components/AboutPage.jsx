@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
+import Stats from "./Stats"
 
 const AboutPage = () => {
   return (
@@ -20,19 +21,18 @@ const AboutPage = () => {
         </div>
         <div className="timeline-flex">
           <div className="timeline">
-            <div className="stats-container">
-              <div className="container">
-                <div className="content">
-                  <h1>30</h1>
-                  <p>MEMBERS</p>
-                  <p>Mechanical<br />Electrical<br />Computer Science<br />Business</p>
-                </div>
+            <div className="container">
+              <div className='janky-extra-div'>
+                <Stats stats={[
+                  { value: '30', label: 'Members' },
+                  { value: '04', label: 'Subteams' }
+                ]} align="left" text="kms" />
               </div>
-              <div className="container">
-                <div className="content">
-                  <h1>04</h1>
-                  <p>SUBTEAMS</p>
-                </div>
+              <div className='teams'>
+                <p>Mechanical</p>
+                <p>Electrical</p>
+                <p>Computer Science</p>
+                <p>Business</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const AboutPage = () => {
             <div className="content">
               <h2>COMPETITION</h2>
               <p>The Mission 9 challenge has been completed. As a result, we will now redirect our attention towards Mission 10. More information regarding Mission 10 is expected to be revealed later this year.</p>
-              <p>For more information, check out their website: <a href="http://www.aerialroboticscompetition.org">International Aerial Robotics Competition</a></p>
+              <p>For more information, check out their website: <a className='link' href="http://www.aerialroboticscompetition.org" target="_blank" rel="noreferrer">International Aerial Robotics Competition</a></p>
             </div>
           </div>
         </div>

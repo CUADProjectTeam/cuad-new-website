@@ -1,5 +1,6 @@
 @import './styles.css';
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 .active-drones {
     display: flex;
@@ -22,7 +23,7 @@
 }
 
 .line {
-    width: 2px;
+    width: .25vw;
     /* box-height text-height text-padding box-padding */
     height: calc(40vw + 2vw + 2vw + 2*20px);
     background-color: var(--logo-red);
@@ -72,8 +73,9 @@
 }
 
 #graveyard {
-    font-family: 'Helvetica Neue, Helvetica', sans-serif;
+    font-family: 'Inter', 'sans serif';
     font-weight: 300;
     font-size: 4vw;
     padding-left: 45px;
+    text-transform: uppercase;
 }
