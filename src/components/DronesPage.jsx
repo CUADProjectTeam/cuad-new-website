@@ -24,7 +24,7 @@ const drones = {
         description: "Flippy is our trainer drone and the most acrobatic in our lineup. With a carbon-fiber-infused 3D printed frame, this quad is our most crash-resistant and perfect for teaching new members how to fly. It also demonstrates that a tough and smooth flying frame can be 3D printed, with the right design. It is built with freestyle quad components and equipped with an FPV camera for easy high-speed control.",
         stats: [
             { value: '5', label: 'Prop Size (in)' },
-            { value: '0.95', label: 'Weight (kg)' },
+            { value: '0.9', label: 'Weight (kg)' },
             { value: '7.8', label: 'Thrust (kg)' }
         ],
         images: ['./src/components/images/AboutPageDrone.png', './src/components/images/FooterGithubIcon.png']
@@ -40,12 +40,6 @@ const deadDrones = {
 }
 
 const DronesPage = () => {
-    console.log(
-        Object.entries(drones).map(([_k, _v], index) => {
-            { index != 0 && <div key={`${index}-line`} className='line'></div> }
-            <div key={`${index}-dot`} className='dot'></div>
-        })
-    )
     return (
         <>
             <div className='title-card'>
