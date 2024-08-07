@@ -38,3 +38,26 @@
     height: 30vw;
     width: 50%;
 }
+
+@media screen and (max-width: 768px) {
+
+    .team-banner {
+        flex-direction: column !important;
+    }
+
+    .team-banner>.images {
+        height: 100% !important;
+    }
+
+    .team-banner>.description {
+        padding: 0 3vw !important;
+    }
+
+    .team-list {
+        padding: 0;
+    }
+
+    .team-section {
+        margin: 0 3vw !important;
+    }
+}

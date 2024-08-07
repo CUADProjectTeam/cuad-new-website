@@ -79,3 +79,44 @@
     padding-left: 45px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        flex-direction: column-reverse !important;
+    }
+
+    .description {
+        width: 100% !important;
+    }
+
+    .description p {
+        margin-top: 10px !important;
+    }
+
+    .stat-item p {
+        margin-top: 2px !important;
+        font-size: .75em !important;
+    }
+
+    .stat-item h1 {
+        font-size: 16vw !important;
+    }
+
+    .images {
+        height: 70vw !important;
+        width: 100% !important;
+    }
+
+    #graveyard {
+        text-align: center;
+        font-size: 8vw !important;
+    }
+
+    .graveyard-section {
+        flex-direction: column-reverse !important;
+    }
+
+    .graveyard-section .description {
+        padding: 10px 0;
+    }
+}

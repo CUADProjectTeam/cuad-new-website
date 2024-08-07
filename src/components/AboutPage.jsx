@@ -37,8 +37,8 @@ const AboutPage = () => {
               <div className="container">
                 <div className='janky-extra-div'>
                   <Stats stats={[
+                    { value: '04', label: 'Subteams' },
                     { value: '30', label: 'Members' },
-                    { value: '04', label: 'Subteams' }
                   ]} align="left" text="kms" />
                 </div>
                 <div className='teams'>

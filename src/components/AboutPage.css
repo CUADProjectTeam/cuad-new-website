@@ -36,7 +36,8 @@
 }
 
 .about-section {
-  padding: 20px 20px;
+  padding: 40px 20px;
+  padding-left: 0;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;

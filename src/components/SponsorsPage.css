@@ -1,1 +1,55 @@
 @import './styles.css';
+
+
+.sponsor-header {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.sponsor-header img {
+    display: block;
+}
+
+.sponsor-header h1 {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10vw;
+    line-height: 70%;
+}
+
+.sponsor-body {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    min-height: 40vw;
+}
+
+.sponsor-text {
+    width: 60%;
+}
+
+.sponsor-pdf {
+    width: 40%;
+    position: relative;
+}
+
+.sponsor-doc {
+    max-height: 30vw;
+    position: absolute;
+    top: 10%;
+    right: -10%;
+}
+
+.back {
+    transform: rotate(-10deg) translate(-20%, 0);
+    z-index: 0;
+}
+
+.front {
+    z-index: 1;
+}

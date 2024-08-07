@@ -79,3 +79,13 @@
   font-size: 1.75em;
   margin-top: .25em;
 }
+
+@media screen and (max-width: 768px) {
+  .title-centering {
+    height: 1.5em;
+  }
+
+  .title-centering h1 {
+    font-size: 1.5em;
+  }
+}
