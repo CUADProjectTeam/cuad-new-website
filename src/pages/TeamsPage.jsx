@@ -17,7 +17,7 @@ const Team = ({ title, description, date, images }) => {
 const teams = {
 
     "Mechanical": {
-        description: "The mechanical team is responsible for the overall physical of the drone. This includes designing and building the frame and aerodynamics of the drone. They also work closely together with the electrical team when mounting of the sensor to the drone.",
+        description: "The mechanical team is responsible for the structural design and analysis of the drone, as well as any other mechanical subsystems. They also handle all fabrication and assembly for our UAV, working closely with the Electrical team on electronics integration.",
         images: ['./src/components/images/AboutPageDrone.png', './src/components/images/FooterGithubIcon.png']
     },
     "Electrical": {
@@ -41,7 +41,12 @@ const TeamsPage = () => {
             <div className="description">
                 <h1 id="num4">04</h1>
                 <h1 id="subteams">Subteams</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem perspiciatis repellendus expedita ad numquam voluptate nihil ab iusto error saepe nobis reiciendis excepturi dicta possimus ipsum, ut incidunt ratione.</p>
+                <p>We are divided into Mechanical, Electrical, Computer
+Science, and Business subteams. Each unit
+contributes its unique expertise, making us not just a
+team of skilled engineers and strategists, but also a
+close-knit community of friends who share a common
+passion for innovation in aerial robotics.</p>
             </div>
         </section>
         <ul className='team-list'>

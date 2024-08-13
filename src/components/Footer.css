@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #fff;
 }
 
 .footer-left,
@@ -13,16 +12,23 @@
 }
 
 .footer-left h1 {
-    font-family: Helvetica;
+ font-weight: 800;
 }
-
+.footer-left h1 {
+    font-weight: 800;
+    margin-bottom: 0; /* Remove bottom margin from the header */
+  }
+  
+  .footer-left p {
+    margin-top: 5px; /* Add a small top margin to the paragraph */
+  }
 h5 {
     padding: -10%;
 }
 
 .footer-left p,
 .footer-right p {
-    margin: 5px 0;
+    margin: 0px 0;
 }
 
 .footer-right {
