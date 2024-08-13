@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './DronesPage.css';
-import Drone, { DeadDrone } from './Drone'
+import Drone, { DeadDrone } from '../components/Drone'
 
 const drones = {
     'Buttery': {
@@ -44,7 +44,6 @@ const DronesPage = () => {
     return (
         <>
             <div className='title-card'>
-
                 <img src='./src/components/images/drone-title.png' />
                 <div className='title-text'>
                     <img src='./src/components/images/CUAD.svg' />

@@ -3,6 +3,19 @@
     flex-direction: row;
 }
 
+.team-banner>.images {
+    height: 100%;
+    display: inline-block;
+}
+
+.team-banner img {
+    display: block;
+}
+
+.team-banner>.description {
+    background-color: #E6E6E6;
+}
+
 #num4 {
     word-break: keep-all;
     font-family: 'Advent Pro', sans-serif;
@@ -23,7 +36,7 @@
 .team-section {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
 }
 
@@ -36,10 +49,14 @@
 
 .team-images {
     height: 30vw;
-    width: 50%;
+    width: 40%;
 }
 
 @media screen and (max-width: 768px) {
+
+    .team-banner>.description {
+        background-color: transparent;
+    }
 
     .team-banner {
         flex-direction: column !important;

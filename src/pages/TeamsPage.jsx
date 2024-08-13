@@ -1,6 +1,6 @@
 import React from 'react';
 import './TeamsPage.css';
-import ImageCarousel from './ImageCarousel';
+import ImageCarousel from '../components/ImageCarousel';
 
 const Team = ({ title, description, date, images }) => {
     return (

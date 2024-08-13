@@ -3,13 +3,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AboutPage from './components/AboutPage';
-import TeamsPage from './components/TeamsPage';
-import DronesPage from './components/DronesPage';
-import MembersPage from './components/MembersPage';
-import DonatePage from './components/DonatePage';
-import SponsorsPage from './components/SponsorsPage';
-import ApplyPage from './components/ApplyPage';
+import AboutPage from './pages/AboutPage';
+import TeamsPage from './pages/TeamsPage';
+import DronesPage from './pages/DronesPage';
+import MembersPage from './pages/MembersPage';
+import DonatePage from './pages/DonatePage';
+import SponsorsPage from './pages/SponsorsPage';
+import ApplyPage from './pages/ApplyPage';
 
 const App = () => {
   return (

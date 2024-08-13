@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
-import Stats from "./Stats"
+import Stats from "../components/Stats"
 
 const AboutPage = () => {
   return (
@@ -61,6 +61,9 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='graph'>
+          <img src='./src/components/images/graph.png' />
         </div>
       </div>
     </section>
