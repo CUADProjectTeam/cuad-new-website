@@ -25,7 +25,7 @@ const AboutPage = () => {
 
           <div key={`3-dot`} className='dot small'></div>
         </div>
-        <div>
+        <div className='about-content'>
           <div className="about-container">
             <div className="content about-us">
               <h2>About Us</h2>

@@ -99,6 +99,10 @@
   margin-left: 20px;
 }
 
+.about-content {
+  width: 90%;
+}
+
 .right-content {
   width: 50%;
 }

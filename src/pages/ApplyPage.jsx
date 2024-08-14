@@ -85,7 +85,7 @@ const ApplyPage = () => {
           We are looking for a diverse range of students here at CUAD! We look forward to reading
           your applications and getting to know you further!
         </p>
-        <button>Apply Now!</button>
+        <button className="apply-button">Apply Now!</button>
       </div>
 
       <img src="/path-to-grid-image.png" alt="Grid Background" className="grid-background" />
