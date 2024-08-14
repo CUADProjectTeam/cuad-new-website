@@ -4,12 +4,12 @@ import './SponsorsPage.css';
 const SponsorsPage = () => {
     return (<>
         <div className='sponsor-header'>
-            <img src="./src/components/images/sponsors-header.png" />
+            <img src="./src/components/images/sponsors-header.webp" />
             <h1>Supporting...</h1>
         </div>
         <div className='sponsor-body'>
             <div className='logo'>
-                <img src="./src/components/images/flippy2.png" />
+                <img src="./src/components/images/flippy2.webp" />
             </div>
             <div className='donate-text'>
                 <img className="cuad" src="src/components/images/CUAD.svg" alt="CUAD" />
@@ -26,8 +26,8 @@ const SponsorsPage = () => {
                 <button>Download Sponsorship Packet</button>
             </div>
             <div className='sponsor-pdf'>
-                <img src="./src/components/images/sponsor-front.png" className='sponsor-doc front' />
-                <img src="./src/components/images/sponsor-back.png" className='sponsor-doc back' />
+                <img src="./src/components/images/sponsor-front.webp" className='sponsor-doc front' />
+                <img src="./src/components/images/sponsor-back.webp" className='sponsor-doc back' />
             </div>
         </div>
         <section>

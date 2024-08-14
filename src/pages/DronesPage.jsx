@@ -10,7 +10,7 @@ const drones = {
             { value: '4.9', label: 'Weight (kg)' },
             { value: '15.1', label: 'Thrust (kg)' }
         ],
-        images: ['./src/components/images/buttery.JPG', './src/components/images/buttery2.JPG', './src/components/images/buttery1.png']
+        images: ['./src/components/images/buttery.webp', './src/components/images/buttery2.webp', './src/components/images/buttery1.webp']
     },
     'Greasy': {
         description: "Greasy was our first custom-designed large drone. It suffered from electrical problems, motor alignment issues, and insufficient frame stiffness. Greasy struggled to get consistent stable flight but taught us a ton about designing frames for large drones, finding good components, wiring, and debugging.",
@@ -19,7 +19,7 @@ const drones = {
             { value: '3.6', label: 'Weight (kg)' },
             { value: '12.2', label: 'Thrust (kg)' }
         ],
-        images: ['./src/components/images/greasy0.jpg', './src/components/images/greasy1.png', './src/components/images/greasy2.png']
+        images: ['./src/components/images/greasy0.webp', './src/components/images/greasy1.webp', './src/components/images/greasy2.webp']
     },
     'Flippy': {
         description: "Flippy is our trainer drone and the most acrobatic in our lineup. With a carbon-fiber-infused 3D printed frame, this quad is our most crash-resistant and perfect for teaching new members how to fly. It also demonstrates that a tough and smooth flying frame can be 3D printed, with the right design. It is built with freestyle quad components and equipped with an FPV camera for easy high-speed control.",
@@ -28,7 +28,7 @@ const drones = {
             { value: '0.9', label: 'Weight (kg)' },
             { value: '7.8', label: 'Thrust (kg)' }
         ],
-        images: ['./src/components/images/flippy2.png', './src/components/images/flippy1.jpeg', './src/components/images/flippy.jpg']
+        images: ['./src/components/images/flippy2.webp', './src/components/images/flippy1.webp', './src/components/images/flippy.webp']
     }
 }
 
@@ -36,7 +36,7 @@ const deadDrones = {
     'Brenda': {
         description: "Brenda was a drone made from old parts designed to test docking mechanisms. She has prop guards to make it easier to get near objects and a custom-designed grabber to attach to a mast when the pilot flips a switch. Brenda… retired just moments after completing her mission.",
         date: '05.18.2024',
-        images: ['./src/components/images/rip_brenda.jpg', './src/components/images/brenda3.jpeg', './src/components/images/brenda2.jpg', './src/components/images/brenda1.png']
+        images: ['./src/components/images/rip_brenda.webp', './src/components/images/brenda3.webp', './src/components/images/brenda2.webp', './src/components/images/brenda1.webp']
     }
 }
 
@@ -44,7 +44,7 @@ const DronesPage = () => {
     return (
         <>
             <div className='title-card'>
-                <img src='./src/components/images/drone-title.png' />
+                <img src='./src/components/images/drone-title.webp' />
                 <div className='title-text'>
                     <img src='./src/components/images/CUAD.svg' />
                     <h1>Drones</h1>

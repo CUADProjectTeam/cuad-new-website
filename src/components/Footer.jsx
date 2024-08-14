@@ -15,13 +15,13 @@ const Footer = () => {
                 <p>Check out more information about CUAD below:</p>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/company/cu-auto-drone/" target="_blank" rel="noreferrer">
-                        <img src="src/components/images/FooterLinkedInIcon.png" alt="LinkedIn" />
+                        <img src="src/components/images/FooterLinkedInIcon.webp" alt="LinkedIn" />
                     </a>
                     <a href="https://www.instagram.com/cuautodrone" target="_blank" rel="noreferrer">
-                        <img src="src/components/images/FooterInstagramIcon.png" alt="Instagram" />
+                        <img src="src/components/images/FooterInstagramIcon.webp" alt="Instagram" />
                     </a>
                     <a href="https://github.com/cuautodrone" target="_blank" rel="noreferrer">
-                        <img src="src/components/images/FooterGithubIcon.png" alt="GitHub" />
+                        <img src="src/components/images/FooterGithubIcon.webp" alt="GitHub" />
                     </a>
                 </div>
             </div>
