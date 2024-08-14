@@ -8,7 +8,7 @@ const SponsorsPage = () => {
             <h1>Supporting...</h1>
         </div>
         <div className='sponsor-body'>
-            <div className='logo'>
+            <div className='sponsor-drone'>
                 <img src="./src/components/images/flippy2.webp" />
             </div>
             <div className='donate-text'>

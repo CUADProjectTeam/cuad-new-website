@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: transparent;
 }
 
 .footer-left,
@@ -9,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: transparent;
 }
 
 .footer-left h1 {

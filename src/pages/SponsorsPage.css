@@ -12,11 +12,11 @@
     font-family: 'Helvetica', 'Intel', 'sans-serif';
     position: absolute;
     bottom: 0;
-    left: 40%;
+    left: 45%;
     margin: 0;
     text-transform: uppercase;
     color: #fff;
-    font-size: 7vw;
+    font-size: 6vw;
     text-decoration-color: aqua;
     line-height: 68%;
 }
@@ -28,26 +28,26 @@
 }
 
 .donate-text {
-    width: 60%;
+    width: 55%;
     padding-right: 6vw;
 }
 
-.logo {
-    width: 40%;
-    overflow: hidden;
+.sponsor-drone {
+    width: 45%;
     position: relative;
+    z-index: -1;
 }
 
-.logo img {
+.sponsor-drone img {
     position: absolute;
-    width: 45vw;
-    left: -6vw;
-    top: 0%;
-    transform: scaleX(-1) rotate(-10deg);
+    width: 60vw;
+    max-height: none;
+    left: -17vw;
+    transform: scaleX(-1) rotate(-10deg) translate(0, -25%);
 }
 
 .sponsor-text {
-    padding-left: 8vw;
+    padding-left: 6vw;
     width: 50%;
 }
 
@@ -81,4 +81,23 @@
 
 .front {
     z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .sponsor-drone,
+    .sponsor-pdf {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .sponsor-text,
+    .donate-text {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sponsor-text h1 {
+        font-size: 2em;
+    }
 }

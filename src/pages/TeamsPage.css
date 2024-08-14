@@ -30,7 +30,7 @@
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 4vw;
+    font-size: max(4vw, 1.5em);
     margin: 0;
     margin-bottom: 1vw;
 }
@@ -38,19 +38,18 @@
 .team-section {
     display: flex;
     flex-direction: row;
-    /* width: 90%; */
     margin: auto;
 }
 
 .team-section h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
-    font-size: 4vw;
+    font-size: max(4vw, 1.5em);
     margin-bottom: 10px;
 }
 
 .team-images {
-    height: 30vw;
+    height: max(30vw, 200px);
     width: 40%;
 }
 
@@ -78,5 +77,10 @@
 
     .team-section {
         margin: 0 3vw !important;
+        flex-direction: column-reverse;
+    }
+
+    .team-images {
+        width: 100%;
     }
 }

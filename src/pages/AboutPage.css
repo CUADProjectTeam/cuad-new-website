@@ -40,7 +40,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  /* z-index: 1; */
 }
 
 .about-section h2 {
@@ -50,16 +49,15 @@
 .graph {
   position: absolute;
   width: 100%;
-  overflow: hidden;
   height: 100%;
   z-index: -1;
 }
 
 .graph img {
   position: absolute;
-  left: -45%;
   transform: translate(-30px);
-  width: 150vw;
+  left: -10%;
+  width: 90%;
 }
 
 .timeline-flex {
@@ -152,6 +150,7 @@ p {
 
   .about-section {
     padding: 20px 0;
+    justify-content: space-around;
   }
 
   .about-section img {
@@ -159,10 +158,14 @@ p {
     transform: translate(0, 20%);
   }
 
+  .graph img {
+    left: -15%;
+    width: 120%;
+  }
 
   .dot-lines {
     visibility: hidden;
-    width: 0;
+    width: 0 !important;
   }
 
   .about-us {

@@ -45,3 +45,7 @@ button {
 button:hover {
   background-color: var(--accent-red);
 }
+
+img {
+  width: 100%;
+}

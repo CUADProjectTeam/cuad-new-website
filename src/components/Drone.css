@@ -43,8 +43,6 @@
   justify-content: center;
   flex-direction: column;
   padding: 0 2vw;
-  /* padding-right: 2vw;
-  padding-left: 2vw; */
   background-color: #fff;
   width: 50%;
 }
@@ -94,5 +92,9 @@
 
   .images {
     padding-right: 10px;
+  }
+
+  .description p {
+    font-size: 1em;
   }
 }
