@@ -34,13 +34,17 @@
 .images {
   height: 40vw;
   width: 50%;
+  padding: 1vw;
+  padding-right: 0;
 }
 
 .description {
-  flex: 1;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding: 0 2vw;
+  /* padding-right: 2vw;
+  padding-left: 2vw; */
   background-color: #fff;
   width: 50%;
 }
@@ -86,5 +90,9 @@
 
   .title-centering h1 {
     font-size: 1.5em;
+  }
+
+  .images {
+    padding-right: 10px;
   }
 }

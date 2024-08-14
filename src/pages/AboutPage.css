@@ -41,6 +41,11 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  /* z-index: 1; */
+}
+
+.about-section h2 {
+  text-transform: uppercase;
 }
 
 .graph {
@@ -48,6 +53,7 @@
   width: 100%;
   overflow: hidden;
   height: 100%;
+  z-index: -1;
 }
 
 .graph img {
@@ -83,7 +89,7 @@
 .teams p {
   margin: 0;
   font-size: 2em;
-  font-family: 'Inter', 'sans serif';
+  font-family: 'Inter', 'sans-serif';
   font-weight: 300;
 }
 
@@ -148,6 +154,7 @@ p {
     left: -25%;
     transform: translate(0, 20%);
   }
+
 
   .dot-lines {
     visibility: hidden;

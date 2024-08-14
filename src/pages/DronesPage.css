@@ -9,6 +9,7 @@
 .drones {
     flex-direction: column;
     padding: 0;
+    width: 90%;
 }
 
 .dot-lines {
@@ -16,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60vw;
+    width: 10%;
     padding-left: 2vw;
     padding-bottom: 20px;
 }
@@ -72,7 +73,7 @@
 }
 
 #graveyard {
-    font-family: 'Inter', 'sans serif';
+    font-family: 'Inter', 'san- serif';
     font-weight: 300;
     font-size: 4vw;
     padding-left: 45px;
