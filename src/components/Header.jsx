@@ -11,7 +11,7 @@ const Header = ({ setPage }) => {
           <li><NavLink activeclassname="current" to={'/teams'}>Teams</NavLink></li>
           <li><NavLink activeclassname="current" to={'/drones'}>Drones</NavLink></li>
           {/* <li><NavLink activeclassname="current" to={'/members'}>Members</NavLink></li> */}
-          <li><NavLink activeclassname="current" to={'/donate'}>Donate</NavLink></li>
+          {/* <li><NavLink activeclassname="current" to={'/donate'}>Donate</NavLink></li> */}
           <li><NavLink activeclassname="current" to={'/sponsors'}>Sponsors</NavLink></li>
           <li><NavLink activeclassname="current" to={'/apply'}>Apply</NavLink></li>
         </ul>

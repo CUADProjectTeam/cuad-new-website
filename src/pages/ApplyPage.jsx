@@ -51,15 +51,14 @@ const ApplyPage = () => {
     <div className="apply-page">
       <div className="main-content">
         <div className="drone-images">
-          <img src="./src/components/images/logo-sketch.webp" alt="Red Drone" className="red-drone" />
-          <img src="./src/components/images/flippy2.webp" alt="Drone Outline" className="drone-outline" />
+          <img src="./images/logo-sketch.webp" alt="Red Drone" className="red-drone" />
+          <img src="./images/flippy2.webp" alt="Drone Outline" className="drone-outline" />
         </div>
 
         <div className="apply-header">
-          <h1 className="apply-to">APPLY TO...</h1>
-          <img className="cuad" src="src/components/images/CUAD.svg" alt="CUAD" />
+          <h1 className="apply-to">APPLY TO</h1>
+          <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
         </div>
-        {/* <h1 className="cuad">CUAD</h1> */}
 
         <h2>INFORMATION SESSIONS</h2>
 
@@ -108,7 +107,7 @@ const ApplyPage = () => {
           <button className="apply-button">Apply Now!</button>
         </div>
       </div>
-      <img src="./src/components/images/graph.webp" alt="Grid Background" className="grid-background" />
+      <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
     </div>
   );
 };

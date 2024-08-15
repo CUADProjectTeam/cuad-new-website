@@ -6,9 +6,9 @@ const AboutPage = () => {
   return (
     <section id="about" className="about">
       <div className="overall-flex">
-        <img className="bg" src="src/components/images/AboutPageDrone.webp" alt="Drone" />
+        <img className="bg" src="images/AboutPageDrone.webp" alt="Drone" />
         <div className="cuad-container">
-          <img className="cuad" src="src/components/images/CUAD.svg" alt="CUAD" />
+          <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
           <p className="cuad-text">An interdisciplinary student-run project team @ Cornell University that designs, builds, and operates aerial robotics.</p>
         </div>
       </div>
@@ -62,7 +62,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='graph'>
-          <img src='./src/components/images/graph.webp' />
+          <img src='./images/graph.webp' />
         </div>
       </div>
     </section>
