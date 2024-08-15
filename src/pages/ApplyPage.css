@@ -24,38 +24,45 @@
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 20px;
   position: relative;
   z-index: 1;
 }
 
 .drone-images {
   position: relative;
-  height: 200px;
+  height: 20vw;
+  z-index: -1;
 }
 
-.drone-outline,
+.main-content h2 {
+  font-weight: 300;
+}
+
+.drone-outline {
+  position: absolute;
+  top: -60%;
+  left: -15%;
+  transform: scaleX(-1);
+  width: 75%;
+}
+
 .red-drone {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 100%;
+  top: -10%;
+  right: -5%;
+  transform: rotate(-5deg);
+  max-width: 50%;
+}
+
+.apply-header {
+  padding-right: 5vw;
 }
 
 .apply-to {
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-.cuad {
-  font-size: 72px;
-  margin-top: 0;
-  color: black;
-}
-
-.cuad::first-letter {
-  color: red;
+  font-size: 5vw;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -65,13 +72,13 @@ h2 {
 
 .info-section {
   display: flex;
-  gap: 80px;
-  margin-top: 20px;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .calendar-container {
   flex: 1;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .month-toggle {
@@ -89,6 +96,30 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.mini-calendar h3 {
+  font-size: clamp(1em, 2.25vw, 2em);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.calendar-header button {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent !important;
+  border: none;
+  font-size: clamp(1em, 2.25vw, 2em);
+  padding: 0.5rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -104,9 +135,13 @@ h2 {
   align-items: center;
 }
 
+.calendar-day-header {
+  font-size: 1.25vw;
+}
+
 .calendar-day {
   aspect-ratio: 1;
-  font-size: clamp(1.25em, 2vw, 2em);
+  font-size: clamp(.7em, 1.75vw, 2em);
 }
 
 .calendar-day.highlighted {
@@ -122,7 +157,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 75%;
+  height: 80%;
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--accent-red);
@@ -136,7 +171,17 @@ h2 {
 }
 
 .session {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
+}
+
+.session div {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .session h3 {
@@ -160,11 +205,16 @@ h2 {
 
 .grid-background {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -100px;
+  right: -20%;
   width: 100%;
   z-index: 0;
   opacity: 0.5;
+  transform: scaleX(-1);
+}
+
+.application {
+  width: 60%;
 }
 
 @media screen and (max-width: 768px) {
@@ -172,8 +222,18 @@ h2 {
     padding: 20px;
   }
 
+  .mini-calendar {
+    padding: 0;
+    margin: 10px auto;
+    width: min(480px, 100%)
+  }
+
   .calendar-container {
     max-width: 100%;
+  }
+
+  .calendar-day-header {
+    font-size: min(1em, 3vw);
   }
 
   .info-section {
@@ -182,5 +242,13 @@ h2 {
 
   .session-info {
     flex-direction: row;
+  }
+
+  .application {
+    width: 100%;
+  }
+
+  .session {
+    flex-direction: column;
   }
 }
