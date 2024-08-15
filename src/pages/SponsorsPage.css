@@ -83,6 +83,36 @@
     z-index: 1;
 }
 
+.sponsor-logos {
+    padding: 40px;
+    text-align: center;
+}
+
+.sponsor-logos h2 {
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.sponsor-logos h3 {
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    flex: 1 1 calc(25% - 10px);
+    max-width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
 
     .sponsor-drone,
