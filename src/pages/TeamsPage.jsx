@@ -24,11 +24,11 @@ const teams = {
         images: ['./images/ece.webp']
     },
     "Computer Science": {
-        description: "Usually our drones are partially or fully autonomous. The computer science subteam makes that possible. They construct and implement the algorithms for path planning and communications, build, train and test the computer vision models for object detection and avoidance, and give the drone the awareness it needs to take on our challenges.",
+        description: "CUAD’s drones are usually partially or fully autonomous and the computer science team makes that happen. Members construct and implement the algorithms for path planning and communications, build, train, and test the computer vision models for object detection and avoidance, and provide the drone with the awareness to take on its challenges.",
         images: ['./images/cs1.webp', './images/cs.webp']
     },
     "Business": {
-        description: "Extreme engineering comes with extreme cost. The business team is in charge of any business development, marketing, or outreach for the team. The team is also responsible for all the finances, website development, media, video editing, and component procurement.",
+        description: "Extreme engineering comes with extreme cost. The business team handles CUAD’s fundraising, marketing, community outreach, and business development. The team is also responsible for finances, website development, media, video editing, and component procurement.",
         images: ['./images/sponsor-front.webp', './images/business1.webp', './images/business.webp']
     }
 }
@@ -40,7 +40,7 @@ const TeamsPage = () => {
             <div className="description">
                 <h1 id="num4">04</h1>
                 <h1 id="subteams">Subteams</h1>
-                <p>CUAD is made up of 4 subteams that work closely to integrate our extreme UAVs. Each team meets individually during the week to complete tasks and the whole team works together on integration at the HVL.</p>
+                <p>CUAD has 4 subteams that coordinate closely to integrate our extreme UAVs. Teams meet individually during the week to complete tasks, and all members work together on integration at the HVL.</p>
             </div>
         </section>
         <ul className='team-list'>

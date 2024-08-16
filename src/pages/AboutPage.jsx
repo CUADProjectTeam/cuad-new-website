@@ -38,7 +38,7 @@ const AboutPage = () => {
                 <div className='janky-extra-div'>
                   <Stats stats={[
                     { value: '04', label: 'Subteams' },
-                    { value: '30', label: 'Members' },
+                    { value: '40', label: 'Members' },
                   ]} align="left" text="kms" />
                 </div>
                 <div className='teams'>
@@ -52,7 +52,7 @@ const AboutPage = () => {
             <div className="right-content">
               <div className="content">
                 <h2>Community</h2>
-                <p>Our 40 members making up 4 subteams come together during regular meetings to engage in a community of innovation. We are not only a team of engineers, but also a group of friends working towards one common goal. Our team members can be found hard at work building frames, cursing broken electronics, crowded around the flight sim, and coming up with bad names for our drones.</p>
+                <p>Our 40-member-strong community spread across 4 subteams meets regularly to tackle problems, generate ideas, and support each other in a community of innovation. We are not only a team of engineers, but also a group of friends working towards one common goal. Members can be found hard at work building frames, cursing broken electronics, crowding around the flight sim, and inventing bad names for our drones.</p>
               </div>
               <div className="content">
                 <h2>Objective</h2>

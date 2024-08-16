@@ -102,14 +102,31 @@
 
 .logos {
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.logos img {
-    flex: 1 1 calc(25% - 10px);
-    max-width: 100%;
+.platinum {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.gold {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.silver {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.bronze {
+    flex: 1 1 100px;
+    max-width: 150px;
 }
 
 

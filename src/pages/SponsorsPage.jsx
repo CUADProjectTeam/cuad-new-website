@@ -43,23 +43,21 @@ const SponsorsPage = () => {
         </div>
         <section className='sponsor-logos'>
             <h2>Thank you to our...</h2>
-            {Object.entries(sponsors).map(([title, values]) => {
+            {Object.entries(sponsors).map(([level, sponsors]) => {
                 return <>
-                    {values.length != 0 &&
+                    {sponsors.length != 0 &&
                         <div>
-                            <h3>{`${title} sponsor${values.length == 1 ? "" : "s"}`}</h3>
+                            <h3>{`${level} sponsor${sponsors.length == 1 ? "" : "s"}`}</h3>
                             <div className='logos'>
-                                {values.map((img) => {
-                                    return <img className='sponsor-logo' src={img} />
+                                {sponsors.map((img) => {
+                                    return <div className={level}><img className='sponsor-logo' src={img} /></div>
                                 })}
                             </div>
                         </div>
                     }
                 </>
             })
-
             }
-
         </section>
     </>)
 }

@@ -4,7 +4,7 @@ import Drone, { DeadDrone } from '../components/Drone'
 
 const drones = {
     'Buttery': {
-        description: "Buttery is the successor to Greasy and our latest and most capable drone. Designed as a testbed, it enables quick mounting of a diverse set of components. It is equipped with a full Ardupilot autonomy stack, a retractable grabber, a Raspberry Pi, a camera, and a Coral TPU making it capable of onboard computer vision and navigation. Configured for full autonomy, Buttery is designed to complete our self-designed challenge where we must navigate obstacles and retrieve a small cube before returning home.",
+        description: "Buttery is the successor to Greasy and our latest and most capable drone. Designed as a testbed, it enables quick mounting of a diverse set of components. It is equipped with a full Ardupilot autonomy stack, retractable grabber, Raspberry Pi, camera, and Coral TPU making it capable of onboard computer vision and navigation. Configured for full autonomy, Buttery is designed to complete our self-designed challenge where we must navigate obstacles and retrieve a small cube before returning home.",
         stats: [
             { value: '15', label: 'Prop Size (in)' },
             { value: '4.9', label: 'Weight (kg)' },

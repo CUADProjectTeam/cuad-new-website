@@ -60,6 +60,16 @@ const ApplyPage = () => {
           <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
         </div>
 
+        <div className="application">
+          <h2>APPLICATION</h2>
+          <p className="application-text">
+            If you’re looking for hands-on experience, a diverse community of engineers and friends, or just want to work on cool drones, you should apply to CUAD! We look forward to reading
+            your applications and getting to know you further.
+          </p>
+          <p>Applications open Monday, August 19th. Check back here for updates.</p>
+          {/* <button className="apply-button">Apply Now!</button> */}
+        </div>
+
         <h2>INFORMATION SESSIONS</h2>
 
         <div className="info-section">
@@ -96,15 +106,6 @@ const ApplyPage = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="application">
-          <h2>APPLICATION</h2>
-          <p className="application-text">
-            We are looking for a diverse range of students here at CUAD! We look forward to reading
-            your applications and getting to know you further!
-          </p>
-          <button className="apply-button">Apply Now!</button>
         </div>
       </div>
       <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
