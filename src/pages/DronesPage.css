@@ -85,6 +85,10 @@
         flex-direction: column-reverse !important;
     }
 
+    .active-drones {
+        justify-content: center;
+    }
+
     .description {
         width: 100% !important;
     }
@@ -108,6 +112,7 @@
     }
 
     #graveyard {
+        padding: 0;
         text-align: center;
         font-size: 8vw !important;
     }

@@ -12,15 +12,6 @@ const drones = {
         ],
         images: ['./images/buttery.webp', './images/buttery2.webp', './images/buttery1.webp']
     },
-    'Greasy': {
-        description: "Greasy was our first custom-designed large drone. It suffered from electrical problems, motor alignment issues, and insufficient frame stiffness. Greasy struggled to get consistent stable flight but taught us a ton about designing frames for large drones, finding good components, wiring, and debugging.",
-        stats: [
-            { value: '15', label: 'Prop Size (in)' },
-            { value: '3.6', label: 'Weight (kg)' },
-            { value: '12.2', label: 'Thrust (kg)' }
-        ],
-        images: ['./images/greasy0.webp', './images/greasy1.webp', './images/greasy2.webp']
-    },
     'Flippy': {
         description: "Flippy is our trainer drone and the most acrobatic in our lineup. With a carbon-fiber-infused 3D printed frame, this quad is our most crash-resistant and perfect for teaching new members how to fly. It also demonstrates that a tough and smooth flying frame can be 3D printed, with the right design. It is built with freestyle quad components and equipped with an FPV camera for easy high-speed control.",
         stats: [
@@ -37,7 +28,12 @@ const deadDrones = {
         description: "Brenda was a drone made from old parts designed to test docking mechanisms. She has prop guards to make it easier to get near objects and a custom-designed grabber to attach to a mast when the pilot flips a switch. Brenda… retired just moments after completing her mission.",
         date: '05.18.2024',
         images: ['./images/rip_brenda.webp', './images/brenda3.webp', './images/brenda2.webp', './images/brenda1.webp']
-    }
+    },
+    'Greasy': {
+        description: "Greasy was our first custom-designed large drone. It suffered from electrical problems, motor alignment issues, and insufficient frame stiffness. Greasy struggled to get consistent stable flight but taught us a ton about designing frames for large drones, finding good components, wiring, and debugging.",
+        date: '04.09.2024',
+        images: ['./images/greasy0.webp', './images/greasy1.webp', './images/greasy2.webp']
+    },
 }
 
 const DronesPage = () => {

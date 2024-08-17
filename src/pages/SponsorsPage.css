@@ -136,6 +136,7 @@
     .sponsor-pdf {
         width: 0;
         visibility: hidden;
+        overflow: hidden;
     }
 
     .sponsor-text,

@@ -114,6 +114,10 @@
   padding-left: 20px;
 }
 
+.janky-extra-div div {
+  flex: 1;
+}
+
 h2 {
   font-size: 30px;
   margin: 0;

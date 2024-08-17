@@ -167,13 +167,12 @@ h2 {
 .session-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .session {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
 }
 
 .session div {
