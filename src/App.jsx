@@ -1,6 +1,6 @@
 // src/App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
@@ -11,9 +11,22 @@ import DonatePage from './pages/DonatePage';
 import SponsorsPage from './pages/SponsorsPage';
 import ApplyPage from './pages/ApplyPage';
 
+const HashRedirect = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const path = window.location.hash.slice(1);
+      navigate(path, { replace: true });
+    }
+  }, [navigate]);
+  return <></>
+}
+
 const App = () => {
   return (
     <Router>
+      <HashRedirect />
       <Header />
       <Routes>
         <Route path="/" element={<AboutPage />} />
