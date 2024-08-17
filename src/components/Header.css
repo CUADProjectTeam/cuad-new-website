@@ -8,7 +8,7 @@
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5vw;
+  gap: min(3vw, 1em);
   font-family: 'Lexend Deca', sans-serif;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ nav ul {
 }
 
 nav a {
-  font-size: max(1.5vw, .5em);
+  font-size: max(1.5vw, .75em);
   text-transform: uppercase;
   text-decoration: none;
   color: #333;
