@@ -51,8 +51,8 @@ const ApplyPage = () => {
     <div className="apply-page">
       <div className="main-content">
         <div className="drone-images">
-          <img src="./images/logo-sketch.webp" alt="Red Drone" className="red-drone" />
-          <img src="./images/flippy2.webp" alt="Drone Outline" className="drone-outline" />
+          <img src="./images/logo-sketch.webp" alt="Red Drone Logo" className="red-drone" />
+          <img src="./images/flippy2.webp" alt="Flippy Drone Outline" className="drone-outline" />
         </div>
 
         <div className="apply-header">

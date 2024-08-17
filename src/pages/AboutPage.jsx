@@ -9,7 +9,7 @@ const AboutPage = () => {
         <img className="bg" src="images/AboutPageDrone.webp" alt="Drone" />
         <div className="cuad-container">
           <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
-          <p className="cuad-text">An interdisciplinary student-run project team @ Cornell University that designs, builds, and operates aerial robotics.</p>
+          <p className="cuad-text">Cornell University Autonomous Drone (pronounced like quad) is an interdisciplinary student-run project team that designs, builds, and operates aerial robotics.</p>
         </div>
       </div>
       <div className="about-section">
@@ -62,7 +62,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='graph'>
-          <img src='./images/graph.webp' />
+          <img src='./images/graph.webp' alt='Grid Background' />
         </div>
       </div>
     </section>
