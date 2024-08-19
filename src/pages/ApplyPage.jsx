@@ -68,10 +68,10 @@ const ApplyPage = () => {
           </p>
           <p>Please also fill out the <a className="link" href='https://cornell.ca1.qualtrics.com/jfe/form/SV_3dF2fjywuzGG1wi' target="_blank" rel="noreferrer">general project team application</a>, this is required! Freshman applications are due Thursday, Oct 17th. Upperclassman applications are due Thursday, Sep 5th.</p>
           <div>
-            <a href='https://forms.gle/AHiU2dWr2MTkBUJ37' target="_blank" rel="noreferrer">
+            <a href='https://forms.gle/hp2PwqD7iHqx36eAA' target="_blank" rel="noreferrer">
               <button className='apply-button'>Freshman Application</button>
             </a>
-            <a href='https://forms.gle/pmomjXeQcdAXYrqL7' target="_blank" rel="noreferrer">
+            <a href='https://forms.gle/Rryf5yoD59ZELBjC8' target="_blank" rel="noreferrer">
               <button className='apply-button'>Upperclassman Application</button>
             </a>
           </div>
