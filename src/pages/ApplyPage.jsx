@@ -61,13 +61,20 @@ const ApplyPage = () => {
         </div>
 
         <div className="application">
-          <h2>APPLICATION</h2>
+          <h2>APPLICATIONS</h2>
           <p className="application-text">
             If you’re looking for hands-on experience, a diverse community of engineers and friends, or just want to work on cool drones, you should apply to CUAD! We look forward to reading
             your applications and getting to know you further.
           </p>
-          <p>Applications open Monday, August 19th. Check back here for updates.</p>
-          {/* <button className="apply-button">Apply Now!</button> */}
+          <p>Please also fill out the <a className="link" href='https://cornell.ca1.qualtrics.com/jfe/form/SV_3dF2fjywuzGG1wi' target="_blank" rel="noreferrer">general project team application</a>, this is required! Freshman applications are due Thursday, Oct 17th. Upperclassman applications are due Thursday, Sep 5th.</p>
+          <div>
+            <a href='https://forms.gle/AHiU2dWr2MTkBUJ37' target="_blank" rel="noreferrer">
+              <button className='apply-button'>Freshman Application</button>
+            </a>
+            <a href='https://forms.gle/pmomjXeQcdAXYrqL7' target="_blank" rel="noreferrer">
+              <button className='apply-button'>Upperclassman Application</button>
+            </a>
+          </div>
         </div>
 
         <h2>INFORMATION SESSIONS</h2>
