@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="footer-right">
                 <strong>Thank you for visiting!</strong>
-                <p>Check out more information about CUAD below:</p>
+                <p>Check out more information about CU Auto Drone below:</p>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/company/cu-auto-drone/" target="_blank" rel="noreferrer">
                         <img src="images/FooterLinkedInIcon.webp" alt="LinkedIn" />

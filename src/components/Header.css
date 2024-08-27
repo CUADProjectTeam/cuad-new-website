@@ -16,7 +16,7 @@ nav ul {
 }
 
 nav a {
-  font-size: max(1.5vw, .75em);
+  font-size: clamp(.75em, 1.5vw, 1.5em);
   text-transform: uppercase;
   text-decoration: none;
   color: #333;

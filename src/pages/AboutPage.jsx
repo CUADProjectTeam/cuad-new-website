@@ -29,7 +29,7 @@ const AboutPage = () => {
           <div className="about-container">
             <div className="content about-us">
               <h2>About Us</h2>
-              <p>Founded as a club in 2017, we became one of Cornell’s newest project teams in 2023. We are a team focused on building both controlled and autonomous drones to push the envelope of UAV technology. Every year, we take on a new real-world engineering challenge in our dedicated lab space in the HVL.</p>
+              <p>Founded as a club in 2017, CU AutoDrone became one of Cornell’s newest project teams in 2023. We are a team focused on building both controlled and autonomous drones to push the envelope of UAV technology. Every year, we take on a new real-world engineering challenge in our dedicated lab space in the HVL.</p>
             </div>
           </div>
           <div className="timeline-flex">
