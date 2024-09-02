@@ -77,6 +77,9 @@ const ApplyPage = () => {
           </div>
         </div>
 
+        <h2>MAILING LIST</h2>
+        <p>Sign up to <a className='link' href='https://forms.gle/3UqVSjZbyAddY9rh9' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines and coffee chats.</p>
+
         <h2>INFORMATION SESSIONS</h2>
 
         <div className="info-section">
@@ -84,34 +87,12 @@ const ApplyPage = () => {
             <MiniCalendar
               month={currentMonth}
               year={2024}
-              highlightedDates={currentMonth === 7 ? [27, 28] : [4]}
+              highlightedDates={currentMonth === 7 ? [27, 28] : [4, 12, 23]}
               header={header}
             />
           </div>
 
           <div className="session-info">
-            <div className="session">
-              <div className="stat-item">
-                <h1>01</h1>
-                <p>Info Session</p>
-              </div>
-              <div>
-                <h4>PHILLIPS 307</h4>
-                <p>AUGUST 27TH, 2024</p>
-                <p>5:30 PM - 6:30 PM</p>
-              </div>
-            </div>
-            <div className="session">
-              <div className="stat-item">
-                <h1>02</h1>
-                <p>Info Session</p>
-              </div>
-              <div>
-                <h4>ROCKEFELLER 128</h4>
-                <p>AUGUST 28TH, 2024</p>
-                <p>6:00 PM - 7:00 PM</p>
-              </div>
-            </div>
             <div className="session">
               <div className="stat-item">
                 <h1>03</h1>
@@ -123,11 +104,30 @@ const ApplyPage = () => {
                 <p>7:00 PM - 8:00 PM</p>
               </div>
             </div>
+            <div className="session">
+              <div className="stat-item">
+                <h1>04</h1>
+                <p>Info Session</p>
+              </div>
+              <div>
+                <h4>ROCKEFELLER 231</h4>
+                <p>SEPTEMBER 12TH, 2024</p>
+                <p>6:00 PM - 7:00 PM</p>
+              </div>
+            </div>
+            <div className="session">
+              <div className="stat-item">
+                <h1>05</h1>
+                <p>Info Session</p>
+              </div>
+              <div>
+                <h4>HOLLISTER 306</h4>
+                <p>SEPTEMBER 23TH, 2024</p>
+                <p>7:00 PM - 8:00 PM</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <h2>MAILING LIST</h2>
-        <p>Sign up to <a className='link' href='https://forms.gle/3UqVSjZbyAddY9rh9' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines and coffee chats.</p>
       </div>
       <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
     </div>
