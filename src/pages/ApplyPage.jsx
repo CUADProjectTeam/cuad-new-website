@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ApplyPage.css';
 import Stats from "../components/Stats"
 
-const MiniCalendar = ({ month, year, highlightedDates, header }) => {
+const MiniCalendar = ({ month, year, highlightedDates, header, prevMonth, nextMonth }) => {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDay = new Date(year, month, 1).getDay();
 
@@ -38,14 +38,20 @@ const MiniCalendar = ({ month, year, highlightedDates, header }) => {
   );
 };
 
+const info_dates = {
+  7: [27, 28],
+  8: [4, 12, 23],
+  9: []
+}
+
 const ApplyPage = () => {
-  const [currentMonth, setCurrentMonth] = useState(7); // August is 7 (0-indexed)
+  const [currentMonth, setCurrentMonth] = useState(8); // August is 7 (0-indexed)
 
-  const toggleMonth = () => {
-    setCurrentMonth(currentMonth === 7 ? 8 : 7);
-  };
+  const months = Object.keys(info_dates);
+  const firstMonth = Math.min(...months);
+  const lastMonth = Math.max(...months);
 
-  const header = [toggleMonth, currentMonth === 7 ? "hidden" : "", toggleMonth, currentMonth === 7 ? "" : "hidden"]
+  const header = [() => { setCurrentMonth(currentMonth - 1) }, currentMonth <= firstMonth ? "hidden" : "", () => { setCurrentMonth(currentMonth + 1) }, currentMonth >= lastMonth ? "hidden" : ""]
 
   return (
     <div className="apply-page">
@@ -87,7 +93,9 @@ const ApplyPage = () => {
             <MiniCalendar
               month={currentMonth}
               year={2024}
-              highlightedDates={currentMonth === 7 ? [27, 28] : [4, 12, 23]}
+              highlightedDates={
+                info_dates[currentMonth]
+              }
               header={header}
             />
           </div>

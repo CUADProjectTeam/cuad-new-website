@@ -2,7 +2,7 @@ import React from 'react';
 import './SponsorsPage.css';
 
 const sponsors = {
-    "platinum": ["./images/onshape_logo.webp"],
+    "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg"],
     "gold": [],
     "silver": [],
     "bronze": [],
