@@ -72,14 +72,14 @@ const ApplyPage = () => {
             If you’re looking for hands-on experience, a diverse community of engineers and friends, or just want to work on cool drones, you should apply to CUAD! We look forward to reading
             your applications and getting to know you further.
           </p>
-          <p>Please also fill out the <a className="link" href='https://cornell.ca1.qualtrics.com/jfe/form/SV_3dF2fjywuzGG1wi' target="_blank" rel="noreferrer">general project team application</a>, this is required! Freshman applications are due Thursday, Oct 17th. Upperclassman applications are due Thursday, Sep 5th.</p>
+          <p>Please also fill out the <a className="link" href='https://cornell.ca1.qualtrics.com/jfe/form/SV_3dF2fjywuzGG1wi' target="_blank" rel="noreferrer">general project team application</a>, this is required! Freshman applications are due Thursday, Oct 17th. Upperclassman applications have closed.</p>
           <div>
             <a href='https://forms.gle/hp2PwqD7iHqx36eAA' target="_blank" rel="noreferrer">
               <button className='apply-button'>Freshman Application</button>
             </a>
-            <a href='https://forms.gle/Rryf5yoD59ZELBjC8' target="_blank" rel="noreferrer">
+            {/* <a href='https://forms.gle/Rryf5yoD59ZELBjC8' target="_blank" rel="noreferrer">
               <button className='apply-button'>Upperclassman Application</button>
-            </a>
+            </a> */}
           </div>
         </div>
 
