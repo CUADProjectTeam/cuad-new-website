@@ -130,7 +130,7 @@ const ApplyPage = () => {
               </div>
               <div>
                 <h4>HOLLISTER 306</h4>
-                <p>SEPTEMBER 23TH, 2024</p>
+                <p>SEPTEMBER 23RD, 2024</p>
                 <p>7:00 PM - 8:00 PM</p>
               </div>
             </div>
