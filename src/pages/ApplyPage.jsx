@@ -41,7 +41,7 @@ const MiniCalendar = ({ month, year, highlightedDates, header, prevMonth, nextMo
 const info_dates = {
   7: [27, 28],
   8: [4, 12, 23],
-  9: []
+  9: [9]
 }
 
 const ApplyPage = () => {
@@ -103,34 +103,35 @@ const ApplyPage = () => {
           <div className="session-info">
             <div className="session">
               <div className="stat-item">
-                <h1>03</h1>
-                <p>Info Session</p>
-              </div>
-              <div>
-                <h4>HOLLISTER 306</h4>
-                <p>SEPTEMBER 4TH, 2024</p>
-                <p>7:00 PM - 8:00 PM</p>
-              </div>
-            </div>
-            <div className="session">
-              <div className="stat-item">
-                <h1>04</h1>
-                <p>Info Session</p>
-              </div>
-              <div>
-                <h4>ROCKEFELLER 231</h4>
-                <p>SEPTEMBER 12TH, 2024</p>
-                <p>6:00 PM - 7:00 PM</p>
-              </div>
-            </div>
-            <div className="session">
-              <div className="stat-item">
                 <h1>05</h1>
                 <p>Info Session</p>
               </div>
               <div>
                 <h4>HOLLISTER 306</h4>
                 <p>SEPTEMBER 23RD, 2024</p>
+                <p>7:00 PM - 8:00 PM</p>
+              </div>
+            </div>
+
+            <div className="session">
+              <div className="stat-item">
+                <h1>06</h1>
+                <p>Info Session</p>
+              </div>
+              <div>
+                <h4>LOCATION TBD</h4>
+                <p>OCTOBER 3RD, 2024</p>
+                <p>6:00 PM - 7:00 PM</p>
+              </div>
+            </div>
+            <div className="session">
+              <div className="stat-item">
+                <h1>07</h1>
+                <p>Info Session</p>
+              </div>
+              <div>
+                <h4>RPCC 106</h4>
+                <p>OCTOBER 9TH, 2024</p>
                 <p>7:00 PM - 8:00 PM</p>
               </div>
             </div>
