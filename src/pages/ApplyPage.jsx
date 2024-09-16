@@ -41,7 +41,7 @@ const MiniCalendar = ({ month, year, highlightedDates, header, prevMonth, nextMo
 const info_dates = {
   7: [27, 28],
   8: [4, 12, 23],
-  9: [9]
+  9: [3, 9]
 }
 
 const ApplyPage = () => {
