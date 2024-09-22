@@ -4,11 +4,9 @@ import './SponsorsPage.css';
 const sponsors = {
     "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg"],
     "gold": [],
-    "silver": ["./images/Hargrave-logo.webp"],
+    "silver": [],
     "bronze": [],
 }
-const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png", "./images/APC-logo.webp"]
-
 
 const SponsorsPage = () => {
     return (<>
@@ -60,14 +58,6 @@ const SponsorsPage = () => {
                 </>
             })
             }
-        </section>
-        <section className='sponsor-logos'>
-            <h2>And special thanks to...</h2>
-            <div className='logos'>
-                {special_thanks.map((img) => {
-                    return <div className="silver"><img className='sponsor-logo' src={img} /></div>
-                })}
-            </div>
         </section>
     </>)
 }
