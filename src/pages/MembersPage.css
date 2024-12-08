@@ -1,0 +1,212 @@
+.unique-team-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.unique-team-banner>.unique-images {
+    height: auto;
+    width: 70%;
+    display: inline-block;
+    padding: 0;
+}
+
+.unique-team-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.unique-description {
+    background-color: rgba(255, 255, 255, 0.95); /* Light transparent background */
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 40%;
+    text-align: left;
+}
+
+.unique-num {
+    word-break: keep-all;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    font-size: 10vw; /* Adjusted for better scaling */
+    margin: 0;
+    color: var(--accent-red); /* Ensure the red matches your theme */
+}
+
+.unique-members {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: max(3vw, 1.2em);
+    margin: 0;
+    margin-bottom: 1vw;
+    color: #333;
+}
+
+.unique-caption {
+    font-family: 'Inter', sans-serif;
+    font-size: max(1vw, 14px);
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .unique-team-banner {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .unique-team-banner>.unique-images {
+        width: 100%;
+    }
+
+    .unique-description {
+        width: 100%;
+        padding: 15px 20px;
+        margin-top: 10px;
+    }
+
+    .unique-num {
+        font-size: 20vw;
+    }
+
+    .unique-members {
+        font-size: max(5vw, 1.5em);
+    }
+
+    .unique-caption {
+        font-size: max(3vw, 12px);
+    }
+}.members-page {
+    padding: 20px;
+  }
+  
+  .members-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin: 40px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .subteam-title {
+    font-size: 2.5rem;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Larger cards */
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .member-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Subtle gradient */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .member-image {
+    width: 100%; /* Consistent width */
+    max-width: 250px; /* Larger image size */
+    height: 300px; /* Taller images */
+    object-fit: cover;
+    border-radius: 8px; /* Slightly rounded corners */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+  }
+  
+  .member-name {
+    margin-top: 15px;
+    font-size: 1.6rem; /* Larger name text */
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0.5px; /* Slight letter spacing for readability */
+  }
+  
+  .member-role {
+    font-size: 1.1rem; /* Slightly larger role text */
+    color: #555;
+    margin-top: 10px;
+    font-style: italic; /* Italicized role for visual distinction */
+  }
+  
+  .member-card::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #ff4c4c; /* Accent color (Cornell red) */
+    border-radius: 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .members-title {
+      font-size: 2.5rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .subteam-title {
+      font-size: 2rem;
+    }
+  
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+    }
+  
+    .member-card {
+      padding: 15px;
+    }
+  
+    .member-image {
+      max-width: 200px;
+      height: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller cards for mobile */
+    }
+  
+    .member-card {
+      padding: 10px;
+    }
+  
+    .member-image {
+      max-width: 180px;
+      height: 220px;
+    }
+  }
+  
