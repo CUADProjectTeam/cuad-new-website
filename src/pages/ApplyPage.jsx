@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './ApplyPage.css';
 import Stats from "../components/Stats"
 
-const MiniCalendar = ({ month, year, highlightedDates, header, prevMonth, nextMonth }) => {
+const MiniCalendar = ({ month, year, highlightedDates, header }) => {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDay = new Date(year, month, 1).getDay();
 
@@ -39,19 +39,18 @@ const MiniCalendar = ({ month, year, highlightedDates, header, prevMonth, nextMo
 };
 
 const info_dates = {
-  7: [27, 28],
-  8: [4, 12, 23],
-  9: [3, 9]
-}
+  0: [25, 29], // January (0-indexed) with two info sessions
+};
 
 const ApplyPage = () => {
-  const [currentMonth, setCurrentMonth] = useState(8); // August is 7 (0-indexed)
+  const [currentMonth, setCurrentMonth] = useState(0); // January is 0 (0-indexed)
 
-  const months = Object.keys(info_dates);
-  const firstMonth = Math.min(...months);
-  const lastMonth = Math.max(...months);
-
-  const header = [() => { setCurrentMonth(currentMonth - 1) }, currentMonth <= firstMonth ? "hidden" : "", () => { setCurrentMonth(currentMonth + 1) }, currentMonth >= lastMonth ? "hidden" : ""]
+  const header = [
+    () => { setCurrentMonth(currentMonth - 1) },
+    "hidden", // No previous month (January is the only month shown)
+    () => { setCurrentMonth(currentMonth + 1) },
+    "hidden", // No next month (January is the only month shown)
+  ];
 
   return (
     <div className="apply-page">
@@ -69,22 +68,17 @@ const ApplyPage = () => {
         <div className="application">
           <h2>APPLICATIONS</h2>
           <p className="application-text">
-            If you’re looking for hands-on experience, a diverse community of engineers and friends, or just want to work on cool drones, you should apply to CUAD! We look forward to reading
-            your applications and getting to know you further.
+            This semester, our business and mechanical subteams are recruiting. This is the Spring 2025 application for the CUAD Project Team. The due date for this application is Thursday, Jan 30th, at 11:59 pm. You can find out more information about this project team from our website.
           </p>
-          <p>Please also fill out the <a className="link" href='https://cornell.ca1.qualtrics.com/jfe/form/SV_3dF2fjywuzGG1wi' target="_blank" rel="noreferrer">general project team application</a>, this is required! Freshman applications are due Thursday, Oct 17th. Upperclassman applications have closed.</p>
           <div>
             <a href='https://forms.gle/hp2PwqD7iHqx36eAA' target="_blank" rel="noreferrer">
-              <button className='apply-button'>Freshman Application</button>
+              <button className='apply-button'>Apply Now</button>
             </a>
-            {/* <a href='https://forms.gle/Rryf5yoD59ZELBjC8' target="_blank" rel="noreferrer">
-              <button className='apply-button'>Upperclassman Application</button>
-            </a> */}
           </div>
         </div>
 
         <h2>MAILING LIST</h2>
-        <p>Sign up to <a className='link' href='https://forms.gle/3UqVSjZbyAddY9rh9' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines and coffee chats.</p>
+        <p>Sign up to <a className='link' href='https://forms.gle/3UqVSjZbyAddY9rh9' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines, and coffee chats.</p>
 
         <h2>INFORMATION SESSIONS</h2>
 
@@ -92,10 +86,8 @@ const ApplyPage = () => {
           <div className="calendar-container">
             <MiniCalendar
               month={currentMonth}
-              year={2024}
-              highlightedDates={
-                info_dates[currentMonth]
-              }
+              year={2025}
+              highlightedDates={info_dates[currentMonth]}
               header={header}
             />
           </div>
@@ -103,35 +95,24 @@ const ApplyPage = () => {
           <div className="session-info">
             <div className="session">
               <div className="stat-item">
-                <h1>05</h1>
+                <h1>01</h1>
                 <p>Info Session</p>
               </div>
               <div>
-                <h4>HOLLISTER 306</h4>
-                <p>SEPTEMBER 23RD, 2024</p>
-                <p>7:00 PM - 8:00 PM</p>
+                <h4>HOLLISTER 312</h4>
+                <p>JANUARY 23RD, 2025</p>
+                <p>7:30 PM - 8:30 PM</p>
               </div>
             </div>
 
             <div className="session">
               <div className="stat-item">
-                <h1>06</h1>
+                <h1>02</h1>
                 <p>Info Session</p>
               </div>
               <div>
-                <h4>HOLLISTER 368</h4>
-                <p>OCTOBER 3RD, 2024</p>
-                <p>6:00 PM - 7:00 PM</p>
-              </div>
-            </div>
-            <div className="session">
-              <div className="stat-item">
-                <h1>07</h1>
-                <p>Info Session</p>
-              </div>
-              <div>
-                <h4>RPCC 106</h4>
-                <p>OCTOBER 9TH, 2024</p>
+                <h4>HOLLISTER 362</h4>
+                <p>JANUARY 29TH, 2025</p>
                 <p>7:00 PM - 8:00 PM</p>
               </div>
             </div>
