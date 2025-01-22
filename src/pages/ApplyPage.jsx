@@ -71,7 +71,7 @@ const ApplyPage = () => {
             This semester, our business and mechanical subteams are recruiting. This is the Spring 2025 application for the CUAD Project Team. The due date for this application is Thursday, Jan 30th, at 11:59 pm. You can find out more information about this project team from our website.
           </p>
           <div>
-            <a href='https://forms.gle/hp2PwqD7iHqx36eAA' target="_blank" rel="noreferrer">
+            <a href='https://forms.gle/4ss3vtpzRX9r4S547' target="_blank" rel="noreferrer">
               <button className='apply-button'>Apply Now</button>
             </a>
           </div>
