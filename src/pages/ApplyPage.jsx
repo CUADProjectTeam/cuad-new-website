@@ -111,7 +111,7 @@ const ApplyPage = () => {
                 <p>Info Session</p>
               </div>
               <div>
-                <h4>HOLLISTER 362</h4>
+                <h4>HOLLISTER 320</h4>
                 <p>JANUARY 29TH, 2025</p>
                 <p>7:00 PM - 8:00 PM</p>
               </div>
