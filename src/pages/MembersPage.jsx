@@ -106,7 +106,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_August.jpeg', name: 'August Hassard', team: 'Mechanical' },
     { image: './images/Members/CUAD_Benjamin.jpeg', name: 'Benjamin Reyes', team: 'Electrical' },
     { image: './images/Members/CUAD_Brandon.jpeg', name: 'Brandon Campagna', team: 'Electrical' },
-    { image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Carina Lau', team: 'Business' }, //no pic
+    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Carina Lau', team: 'Business' }, //no pic
     { image: './images/Members/CUAD_Frederick.jpeg', name: 'Carl Frederik Himmer', team: 'Mechanical' },
     { image: './images/Members/CUAD_Cindy.jpeg', name: 'Cindy Wang', team: 'Business' },
     { image: './images/Members/CUAD_Delaney.jpeg', name: 'Delaney Lopez', team: 'Full Team Lead' },
@@ -120,9 +120,9 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_John.jpeg', name: 'John Apessos', team: 'Mechanical Lead' },
     { image: './images/Members/CUAD_JT.jpeg', name: 'JT Klenke', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_Kevin.jpeg', name: 'Kevin Lee', team: 'Electrical' },
-    { image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Kimari Jackson', team: 'Mechanical' }, //no pic
+    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Kimari Jackson', team: 'Mechanical' }, //no pic
     { image: './images/Members/CUAD_Laura.jpg', name: 'Laura Ren', team: 'Mechanical' },
-    { image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Lujine Abdelfattah', team: 'Business' }, //no pic
+    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Lujine Abdelfattah', team: 'Business' }, //no pic
     { image: './images/Members/CUAD_Maddox.jpeg', name: 'Maddox Nesterczuk', team: 'Mechanical' },
     { image: './images/Members/CUAD_MarcoXerri.jpeg', name: 'Marco Xerri', team: 'Mechanical' },
     { image: './images/Members/CUAD_MarcosMartinez.jpeg', name: 'Marcos Martinez', team: 'Mechanical' },
