@@ -45,14 +45,7 @@ const SponsorsPage = () => {
         </div>
         
         <section className='sponsor-logos'>
-            {/* Giving day begin*/}
-            <div className='giving-day'>
-            <h2>Its Giving day on Match 13th! please consider donating to CUAD. It helps us create and maintain cool projects</h2>
-            <a href="https://givingday.cornell.edu/campaigns/autonomous-drone-cuad-gift" target='_blank' rel="noreferrer">
-                    <button>Donate for Giving day</button>
-            </a>
-            </div>
-            {/* Giving day end*/}
+            
             <h2>Thank you to our...</h2>
             {Object.entries(sponsors).map(([level, sponsors]) => {
                 return <>

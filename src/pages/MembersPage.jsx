@@ -146,6 +146,9 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Will.jpeg', name: 'Will Howes', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_Winston.jpeg', name: 'Winston Ni', team: 'Computer Science' },
     { image: './images/Members/CUAD_Yating.jpeg', name: 'Yating Chen', team: 'Electrical' },
+
+    //Newbies
+    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Nebil Mohammed', team: 'Business' }, //no pic
   ];
 
   // Separate leads from other members
