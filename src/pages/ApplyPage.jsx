@@ -40,6 +40,7 @@ const MiniCalendar = ({ month, year, highlightedDates, header }) => {
 
 const info_dates = {
   0: [25, 29], // January (0-indexed) with two info sessions
+  // If you want no red dots while TBD, use: 0: []
 };
 
 const ApplyPage = () => {
@@ -68,7 +69,7 @@ const ApplyPage = () => {
         <div className="application">
           <h2>APPLICATIONS</h2>
           <p className="application-text">
-            This semester, our business and mechanical subteams are recruiting. This is the Spring 2025 application for the CUAD Project Team. The due date for this application is Thursday, Jan 30th, at 11:59 pm. You can find out more information about this project team from our website.
+            This semester, CUAD’s Electrical, Mechanical, Software, and Business subteams are recruiting new members. This Fall 2025 application is open to all interested students, with a deadline of Thursday, September 4 at 11:59 PM for upperclassmen, and Thursday, October 16 for freshmen and transfer students. For more information about our project team, please visit our website.
           </p>
           <div>
             <a href='https://forms.gle/gucgFCEnsx8hwmjM7' target="_blank" rel="noreferrer">
@@ -78,7 +79,9 @@ const ApplyPage = () => {
         </div>
 
         <h2>MAILING LIST</h2>
-        <p>Sign up to <a className='link' href='https://forms.gle/3UqVSjZbyAddY9rh9' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines, and coffee chats.</p>
+        <p>
+          Sign up to <a className='link' href='https://forms.gle/pJRqaUFkTLRQc3NY8' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines, and coffee chats.
+        </p>
 
         <h2>INFORMATION SESSIONS</h2>
 
@@ -96,30 +99,33 @@ const ApplyPage = () => {
             <div className="session">
               <div className="stat-item">
                 <h1>01</h1>
-                <p>Info Session</p>
+                {/* <p>Info Session</p> */}
+                <p>Info Sessions TBD</p>
               </div>
               <div>
-                <h4>HOLLISTER 312</h4>
+                {/* <h4>HOLLISTER 312</h4>
                 <p>JANUARY 23RD, 2025</p>
-                <p>7:30 PM - 8:30 PM</p>
+                <p>7:30 PM - 8:30 PM</p> */}
               </div>
             </div>
 
             <div className="session">
               <div className="stat-item">
                 <h1>02</h1>
-                <p>Info Session</p>
+                {/* <p>Info Session</p> */}
+                <p>Info Sessions TBD</p>
               </div>
               <div>
-                <h4>HOLLISTER 320</h4>
+                {/* <h4>HOLLISTER 320</h4>
                 <p>JANUARY 29TH, 2025</p>
-                <p>7:00 PM - 8:00 PM</p>
+                <p>7:00 PM - 8:00 PM</p> */}
               </div>
             </div>
           </div>
         </div>
+
+        <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
       </div>
-      <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
     </div>
   );
 };
