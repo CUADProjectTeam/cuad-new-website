@@ -7,6 +7,12 @@ const Footer = () => {
             <div className="footer-left">
                 <h1>Cornell University Autonomous Drone</h1>
                 <h5>This organization is a registered student organization of Cornell University.</h5>
+                <h5>
+                    Equal Education and Employment:{" "}
+                    <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
+                        https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment
+                    </a>
+                </h5>
                 <p>For Questions & Sponsorship Inquiries:</p>
                 <p>Contact <a className='link' href="mailto:cuautodrone@gmail.com" target="_blank" rel="noreferrer">cuautodrone@gmail.com</a></p>
             </div>
