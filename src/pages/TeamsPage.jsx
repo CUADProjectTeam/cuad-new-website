@@ -17,7 +17,7 @@ const Team = ({ title, description, date, images }) => {
 const teams = {
     "Mechanical": {
         description: "Making use of our in-house 3D printing and CNC capabilities, the mechanical team designs and manufactures the frames and payloads for our drones. Demanding extreme strength, low weight, and optimized aerodynamics, they fuse mechanical intuition with use of analysis software.",
-        images: ['./images/meche0.webp', './images/meche.webp', './images/meche1.webp']
+        images: ['./images/meche2.png','./images/meche0.webp', './images/meche.webp', './images/meche1.webp']
     },
     "Electrical": {
         description: "Electrical systems get our drones into the air, and provide the senses that keep them there. The electrical team designs our complex power and data systems, creates high performance wire harnesses, and programs our mechatronic hardware.",
