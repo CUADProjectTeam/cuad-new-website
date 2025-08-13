@@ -127,6 +127,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Beam.jpeg', name: 'Phawat Leechasan (Beam)', team: 'Electrical' },
     { image: './images/Members/CUAD_Piyali.jpeg', name: 'Piyali Mittal', team: 'Computer Science' },
     { image: './images/Members/CUAD_Rilo.jpeg', name: 'Rilo Oberg', team: 'Full Team Lead' },
+    { image: './images/Members/CUAD_RyanEllis.jpeg', name: 'Ryan Ellis', team: 'Lead' },
     { image: './images/Members/CUAD_RyanFujii.jpeg', name: 'Ryan Fujii', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_Surabhi.jpeg', name: 'Surabhi Bachhav', team: 'Computer Science' },
     { image: './images/Members/CUAD_Tailai.jpeg', name: 'Tailai Ying', team: 'Computer Science' },
