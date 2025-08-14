@@ -4,7 +4,7 @@ import Drone, { DeadDrone } from '../components/Drone'
 
 const drones = {
     'EY009': {
-            description: "EY009 is our carrier drone and our largest and most capable platform. It is built entirely from in-house milled carbon fiber on our CNC machine, large carbon fiber tubes, and secured with custom aluminum clamps. The design also includes 3D printed components that mount electronics and form removable legs. These legs provide a massive 3 foot lift, allowing the drone to carry payloads of up to 150 lbs. EY009 has universal mounting points for a variety of payloads and has already successfully deployed Dart, our test drone. We have many future drops and missions planned for this versatile platform.",
+            description: "EY009 is our carrier drone and our largest and most capable platform. It is built entirely from in-house milled carbon fiber on our CNC machine, large carbon fiber tubes, and secured with custom aluminum clamps. The design also includes 3D printed components that mount electronics and form removable legs. These legs provide a massive 3 foot lift, allowing the drone to deploy a wide variety of subdrones. EY009 has universal mounting points for a variety of payloads and has already successfully deployed Dart, our test drone. We have many future drops and missions planned for this versatile platform.",
             stats: [
                 { value: '30', label: 'Prop Size (in)' },
                 { value: '13', label: 'Weight (kg)' },
