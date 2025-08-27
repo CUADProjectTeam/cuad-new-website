@@ -102,7 +102,6 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_AllieLin.jpeg', name: 'Allie Lin', team: 'Business Lead' },
     { image: './images/Members/CUAD_Abigail.jpeg', name: 'Abigail Gabalski', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Maddox.jpeg', name: 'Maddox Nesterczuk', team: 'Mechanical Lead' },
-    { image: './images/Members/CUAD_JT.jpeg', name: 'JT Klenke', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_RyanFujii.jpeg', name: 'Ryan Fujii', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_Alan.jpeg', name: 'Alan Munschy', team: 'Mechanical' },
     { image: './images/Members/CUAD_AndrewJ.jpg', name: 'Andrew Jiang', team: 'Electrical' },
