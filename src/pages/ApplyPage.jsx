@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import './ApplyPage.css';
 import Stats from "../components/Stats"
 
-const MiniCalendar = ({ month, year, highlightedDates, header }) => {
+const MiniCalendar = ({ month, year, highlightedDates = [], header }) => {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDay = new Date(year, month, 1).getDay();
-
   const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
-  const [prev_fn, prev, next_fn, next] = header;
+  const [prev_fn, prevClass, next_fn, nextClass] = header;
 
   return (
     <div className="mini-calendar">
       <div className='calendar-header'>
-        <button className={`calendar-button ${prev}`} onClick={prev_fn}>
+        <button className={`calendar-button ${prevClass}`} onClick={prev_fn} aria-label="Previous month">
           &#10094;
         </button>
         <h3>{new Date(year, month).toLocaleString('default', { month: 'long' })} {year}</h3>
-        <button className={`calendar-button ${next}`} onClick={next_fn}>
+        <button className={`calendar-button ${nextClass}`} onClick={next_fn} aria-label="Next month">
           &#10095;
         </button>
       </div>
@@ -38,20 +37,55 @@ const MiniCalendar = ({ month, year, highlightedDates, header }) => {
   );
 };
 
+// Only allow September (8) and October (9) of 2025
+const ALLOWED_MONTHS = [8, 9]; // 0-indexed: Sep, Oct
+
 const info_dates = {
-  0: [25, 29], // January (0-indexed) with two info sessions
-  // If you want no red dots while TBD, use: 0: []
+  8: [2, 24],  // September 2025
+  9: [9, 13],  // October 2025
 };
 
-const ApplyPage = () => {
-  const [currentMonth, setCurrentMonth] = useState(0); // January is 0 (0-indexed)
+const sessions = [
+  {
+    id: "01",
+    date: "September 2, 2025",
+    room: "HOLLISTER 312",
+    time: "6:30 PM - 7:30 PM",
+  },
+  {
+    id: "02",
+    date: "September 24, 2025",
+    room: "RPCC 222",
+    time: "7:00 PM - 8:00 PM",
+  },
+  {
+    id: "03",
+    date: "October 9, 2025",
+    room: "TBD",
+    time: "TBD",
+  },
+  {
+    id: "04",
+    date: "October 13, 2025",
+    room: "TBD",
+    time: "TBD",
+  },
+];
 
-  const header = [
-    () => { setCurrentMonth(currentMonth - 1) },
-    "hidden", // No previous month (January is the only month shown)
-    () => { setCurrentMonth(currentMonth + 1) },
-    "hidden", // No next month (January is the only month shown)
-  ];
+const ApplyPage = () => {
+  // start on September (8)
+  const [currentMonth, setCurrentMonth] = useState(8);
+  const year = 2025;
+
+  const atStart = currentMonth === ALLOWED_MONTHS[0];
+  const atEnd = currentMonth === ALLOWED_MONTHS[ALLOWED_MONTHS.length - 1];
+
+  const header = useMemo(() => ([
+    () => !atStart && setCurrentMonth(m => Math.max(ALLOWED_MONTHS[0], m - 1)),
+    atStart ? "hidden" : "",
+    () => !atEnd && setCurrentMonth(m => Math.min(ALLOWED_MONTHS[ALLOWED_MONTHS.length - 1], m + 1)),
+    atEnd ? "hidden" : "",
+  ]), [atStart, atEnd]);
 
   return (
     <div className="apply-page">
@@ -69,7 +103,10 @@ const ApplyPage = () => {
         <div className="application">
           <h2>APPLICATIONS</h2>
           <p className="application-text">
-            This semester, CUAD’s Electrical, Mechanical, Software, and Business subteams are recruiting new members. This Fall 2025 application is open to all interested students, with a deadline of Thursday, September 4 at 11:59 PM for upperclassmen, and Thursday, October 16 for freshmen and transfer students. For more information about our project team, please visit our website.
+            This semester, CUAD’s Electrical, Mechanical, Software, and Business subteams are recruiting new members.
+            This Fall 2025 application is open to all interested students, with a deadline of Thursday, September 4 at
+            11:59 PM for upperclassmen, and Thursday, October 16 for freshmen and transfer students. For more information
+            about our project team, please visit our website.
           </p>
           <div>
             <a href='https://forms.gle/gucgFCEnsx8hwmjM7' target="_blank" rel="noreferrer">
@@ -89,38 +126,25 @@ const ApplyPage = () => {
           <div className="calendar-container">
             <MiniCalendar
               month={currentMonth}
-              year={2025}
-              highlightedDates={info_dates[currentMonth]}
+              year={year}
+              highlightedDates={info_dates[currentMonth] || []}
               header={header}
             />
           </div>
 
           <div className="session-info">
-            <div className="session">
-              <div className="stat-item">
-                <h1>01</h1>
-                {/* <p>Info Session</p> */}
-                <p>Info Sessions TBD</p>
+            {sessions.map(s => (
+              <div className="session" key={s.id}>
+                <div className="stat-item">
+                  <h1>{s.id}</h1>
+                  <p>{s.date}</p>
+                </div>
+                <div>
+                  <h4>{s.room}</h4>
+                  <p>{s.time}</p>
+                </div>
               </div>
-              <div>
-                {/* <h4>HOLLISTER 312</h4>
-                <p>JANUARY 23RD, 2025</p>
-                <p>7:30 PM - 8:30 PM</p> */}
-              </div>
-            </div>
-
-            <div className="session">
-              <div className="stat-item">
-                <h1>02</h1>
-                {/* <p>Info Session</p> */}
-                <p>Info Sessions TBD</p>
-              </div>
-              <div>
-                {/* <h4>HOLLISTER 320</h4>
-                <p>JANUARY 29TH, 2025</p>
-                <p>7:00 PM - 8:00 PM</p> */}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
