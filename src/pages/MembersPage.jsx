@@ -100,6 +100,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_John.jpeg', name: 'John Apessos', team: 'Full Team Technical Lead' },
     { image: './images/Members/CUAD_WhiteImage.jpg', name: 'Lujine Abdelfattah', team: 'Treasurer/Business Lead' }, //no pic
     { image: './images/Members/CUAD_AllieLin.jpeg', name: 'Allie Lin', team: 'Business Lead' },
+    { image: './images/Members/CUAD_Jason.jpeg', name: 'Jason Peskin', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Abigail.jpeg', name: 'Abigail Gabalski', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Maddox.jpeg', name: 'Maddox Nesterczuk', team: 'Mechanical Lead' },
     { image: './images/Members/CUAD_RyanFujii.jpeg', name: 'Ryan Fujii', team: 'Computer Science Lead' },
@@ -115,7 +116,6 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Etienne.jpeg', name: 'Etienne Sasenarine', team: 'Computer Science' },
     { image: './images/Members/CUAD_Geneustace.jpeg', name: 'Geneustace Wickasono', team: 'Electrical' },
     { image: './images/Members/CUAD_Hannah.jpeg', name: 'Hannah Wang', team: 'Business' },
-    { image: './images/Members/CUAD_Jason.jpeg', name: 'Jason Peskin', team: 'Electrical' },
     { image: './images/Members/CUAD_JessicaAn.jpeg', name: 'Jessica An', team: 'Mechanical' },
     { image: './images/Members/CUAD_Kevin.jpeg', name: 'Kevin Lee', team: 'Electrical' },
     { image: './images/Members/CUAD_Laura.jpg', name: 'Laura Ren', team: 'Mechanical' },
