@@ -256,3 +256,32 @@ h2 {
     flex-direction: column;
   }
 }
+/* --- Clickability fix for calendar arrows on wide screens --- */
+
+/* 1) Make decorative layers ignore clicks entirely */
+.grid-background,
+.drone-images,
+.drone-images img {
+  pointer-events: none;
+}
+
+/* 2) Keep the calendar header & buttons above everything decorative */
+.mini-calendar .calendar-header,
+.mini-calendar .calendar-header button {
+  position: relative;
+  z-index: 10;
+}
+
+/* 3) Hidden arrows shouldn't block clicks */
+.calendar-header .hidden,
+.calendar-button.hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* (Optional) If anything else still overlaps, raise the whole calendar */
+.calendar-container,
+.mini-calendar {
+  position: relative;
+  z-index: 5;
+}
