@@ -97,8 +97,8 @@ import Stats from "../components/Stats"
 const MembersPage = () => {
   const members = [
     { image: './images/Members/CUAD_Rilo.jpeg', name: 'Rilo Oberg', team: 'Full Team Lead' },
-    { image: './images/Members/CUAD_John.jpeg', name: 'John Apessos', team: 'Full Team Technical Lead' },
-    { image: './images/Members/CUAD_WhiteImage.jpg', name: 'Lujine Abdelfattah', team: 'Treasurer/Business Lead' }, //no pic
+    { image: './images/Members/CUAD_John.JPG', name: 'John Apessos', team: 'Full Team Technical Lead' },
+    { image: './images/Members/CUAD_Lulu.JPG', name: 'Lujine Abdelfattah', team: 'Treasurer/Business Lead' }, //no pic
     { image: './images/Members/CUAD_AllieLin.jpeg', name: 'Allie Lin', team: 'Business Lead' },
     { image: './images/Members/CUAD_Jason.jpeg', name: 'Jason Peskin', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Abigail.jpeg', name: 'Abigail Gabalski', team: 'Electrical Lead' },
@@ -131,6 +131,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Tailai.jpeg', name: 'Tailai Ying', team: 'Computer Science' },
     { image: './images/Members/CUAD_Thomas.jpeg', name: 'Thomas Meyer', team: 'Mechanical' },
     { image: './images/Members/CUAD_Victor.jpeg', name: 'Victor Liu', team: 'Electrical' },
+    { image: './images/Members/CUAD_Wasif.JPG', name: 'Wasif Atcha', team: 'Mechanical' },
     { image: './images/Members/CUAD_WeiYi.jpeg', name: 'Weiyi Huang', team: 'Electrical' },
     { image: './images/Members/CUAD_Winston.jpeg', name: 'Winston Ni', team: 'Computer Science' },
     { image: './images/Members/CUAD_Yating.jpeg', name: 'Yating Chen', team: 'Electrical' },
