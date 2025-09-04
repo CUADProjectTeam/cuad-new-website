@@ -97,7 +97,7 @@ import Stats from "../components/Stats"
 const MembersPage = () => {
   const members = [
     { image: './images/Members/CUAD_Rilo.jpeg', name: 'Rilo Oberg', team: 'Full Team Lead' },
-    { image: './images/Members/CUAD_John.JPG', name: 'John Apessos', team: 'Full Team Technical Lead' },
+    { image: './images/Members/CUAD_John.JPG', name: 'John Apessos', team: 'Full Team  Lead' },
     { image: './images/Members/CUAD_Lulu.JPG', name: 'Lujine Abdelfattah', team: 'Treasurer/Business Lead' }, //no pic
     { image: './images/Members/CUAD_AllieLin.jpeg', name: 'Allie Lin', team: 'Business Lead' },
     { image: './images/Members/CUAD_Jason.jpeg', name: 'Jason Peskin', team: 'Electrical Lead' },

@@ -29,7 +29,7 @@ const teams = {
     },
     "Business": {
         description: "Extreme engineering comes with extreme cost. The business team handles CUAD’s fundraising, marketing, community outreach, and business development. The team is also responsible for finances, website development, media, video editing, and component procurement.",
-        images: ['./images/sponsor-front.webp', './images/business1.webp', './images/business.webp']
+        images: ['./images/sponsor-front.png', './images/business1.webp', './images/business.webp']
     }
 }
 
