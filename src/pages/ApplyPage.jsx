@@ -61,14 +61,14 @@ const sessions = [
   {
     id: "03",
     date: "October 9, 2025",
-    room: "TBD",
-    time: "TBD",
+    room: "Hollister 312",
+    time: "6:30 PM - 7:30 PM",
   },
   {
     id: "04",
     date: "October 13, 2025",
-    room: "TBD",
-    time: "TBD",
+    room: "Phillips 213",
+    time: "6:30 PM - 7:30 PM",
   },
 ];
 
