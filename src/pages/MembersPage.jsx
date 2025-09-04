@@ -131,7 +131,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Tailai.jpeg', name: 'Tailai Ying', team: 'Computer Science' },
     { image: './images/Members/CUAD_Thomas.jpeg', name: 'Thomas Meyer', team: 'Mechanical' },
     { image: './images/Members/CUAD_Victor.jpeg', name: 'Victor Liu', team: 'Electrical' },
-    { image: './images/Members/CUAD_Wasif.jpeg', name: 'Wasif Atcha', team: 'Mechanical' },
+    { image: './images/Members/CUAD_Wasif.JPG', name: 'Wasif Atcha', team: 'Mechanical' },
     { image: './images/Members/CUAD_WeiYi.jpeg', name: 'Weiyi Huang', team: 'Electrical' },
     { image: './images/Members/CUAD_Winston.jpeg', name: 'Winston Ni', team: 'Computer Science' },
     { image: './images/Members/CUAD_Yating.jpeg', name: 'Yating Chen', team: 'Electrical' },
