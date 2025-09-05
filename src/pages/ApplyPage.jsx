@@ -104,12 +104,11 @@ const ApplyPage = () => {
           <h2>APPLICATIONS</h2>
           <p className="application-text">
             This semester, CUAD’s Electrical, Mechanical, Software, and Business subteams are recruiting new members.
-            This Fall 2025 application is open to all interested students, with a deadline of Thursday, September 4 at
-            11:59 PM for upperclassmen, and Thursday, October 16 for freshmen and transfer students. For more information
+            The Fall 2025 application is now open to freshmen and transfer students, with a deadline of Thursday, October 16. For more information
             about our project team, please visit our website.
           </p>
           <div>
-            <a href='https://forms.gle/gucgFCEnsx8hwmjM7' target="_blank" rel="noreferrer">
+            <a href='https://forms.gle/v981DSWNW8nJ3C2P6' target="_blank" rel="noreferrer">
               <button className='apply-button'>Apply Now</button>
             </a>
           </div>
