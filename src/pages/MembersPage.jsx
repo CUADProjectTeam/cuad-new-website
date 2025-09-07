@@ -103,25 +103,21 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Jason.jpeg', name: 'Jason Peskin', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Abigail.jpeg', name: 'Abigail Gabalski', team: 'Electrical Lead' },
     { image: './images/Members/CUAD_Maddox.jpeg', name: 'Maddox Nesterczuk', team: 'Mechanical Lead' },
-    { image: './images/Members/CUAD_RyanFujii.jpeg', name: 'Ryan Fujii', team: 'Computer Science Lead' },
+    { image: './images/Members/CUAD_Etienne.jpeg', name: 'Etienne Sasenarine', team: 'Computer Science Lead' },
     { image: './images/Members/CUAD_Alan.jpeg', name: 'Alan Munschy', team: 'Mechanical' },
     { image: './images/Members/CUAD_AndrewJ.jpg', name: 'Andrew Jiang', team: 'Electrical' },
     { image: './images/Members/CUAD_AndrewK.jpeg', name: 'Andrew Kim', team: 'Computer Science' },
-    { image: './images/Members/CUAD_August.jpeg', name: 'August Hassard', team: 'Mechanical' },
+    { image: './images/Members/CUAD_Alex.JPG', name: 'Alexander Barry', team: 'Mechanical' },
     { image: './images/Members/CUAD_Benjamin.jpeg', name: 'Benjamin Reyes', team: 'Electrical' },
     { image: './images/Members/CUAD_Brandon.jpeg', name: 'Brandon Campagna', team: 'Electrical' },
-    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Carina Lau', team: 'Business' }, //no pic
     { image: './images/Members/CUAD_Cindy.jpeg', name: 'Cindy Wang', team: 'Business' },
     { image: './images/Members/CUAD_Elizabath.jpeg', name: 'Elizabeth Chen', team: 'Computer Science' },
-    { image: './images/Members/CUAD_Etienne.jpeg', name: 'Etienne Sasenarine', team: 'Computer Science' },
     { image: './images/Members/CUAD_Geneustace.jpeg', name: 'Geneustace Wickasono', team: 'Electrical' },
     { image: './images/Members/CUAD_Hannah.jpeg', name: 'Hannah Wang', team: 'Business' },
     { image: './images/Members/CUAD_JessicaAn.jpeg', name: 'Jessica An', team: 'Mechanical' },
     { image: './images/Members/CUAD_Kevin.jpeg', name: 'Kevin Lee', team: 'Electrical' },
-    { image: './images/Members/CUAD_Laura.jpg', name: 'Laura Ren', team: 'Mechanical' },
     { image: './images/Members/CUAD_MarcoXerri.jpeg', name: 'Marco Xerri', team: 'Mechanical' },
     { image: './images/Members/CUAD_MarcosMartinez.jpeg', name: 'Marcos Martinez', team: 'Mechanical' },
-    { image: './images/Members/CUAD_Michelle.jpeg', name: 'Michelle Dong', team: 'Electrical' },
     { image: './images/Members/CUAD_Narayan.jpeg', name: 'Narayan Topalli', team: 'Computer Science' },
     { image: './images/Members/CUAD_Nathan.jpeg', name: 'Nathan Sheng', team: 'Mechanical' },
     { image: './images/Members/CUAD_Pavithra.jpeg', name: 'Pavithra Kamatchi Soundaram', team: 'Computer Science' },
@@ -133,7 +129,6 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Victor.jpeg', name: 'Victor Liu', team: 'Electrical' },
     { image: './images/Members/CUAD_Wasif.JPG', name: 'Wasif Atcha', team: 'Mechanical' },
     { image: './images/Members/CUAD_WeiYi.jpeg', name: 'Weiyi Huang', team: 'Electrical' },
-    { image: './images/Members/CUAD_Winston.jpeg', name: 'Winston Ni', team: 'Computer Science' },
     { image: './images/Members/CUAD_Yating.jpeg', name: 'Yating Chen', team: 'Electrical' },
 
     //Newbies
@@ -160,7 +155,7 @@ const MembersPage = () => {
           <img src="./images/team-photo.webp" alt="Team" />
         </div>
         <div className="unique-description">
-          <h1 className="unique-num">51</h1>
+          <h1 className="unique-num">40</h1>
           <h1 className="unique-members">Members</h1>
           <p className="unique-caption">
             At Cornell University Auto Drone, we're proud to have a diverse group of talented individuals from various fields of study at Cornell University. Our team members bring a mix of skills and passions to the table, making our project a hub of innovation and expertise.
