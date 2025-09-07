@@ -155,7 +155,7 @@ const MembersPage = () => {
           <img src="./images/team-photo.webp" alt="Team" />
         </div>
         <div className="unique-description">
-          <h1 className="unique-num"40</h1>
+          <h1 className="unique-num">40</h1>
           <h1 className="unique-members">Members</h1>
           <p className="unique-caption">
             At Cornell University Auto Drone, we're proud to have a diverse group of talented individuals from various fields of study at Cornell University. Our team members bring a mix of skills and passions to the table, making our project a hub of innovation and expertise.
