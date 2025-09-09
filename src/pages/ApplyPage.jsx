@@ -119,6 +119,27 @@ const ApplyPage = () => {
           Sign up to <a className='link' href='https://forms.gle/pJRqaUFkTLRQc3NY8' target="_blank" rel="noreferrer">our email list</a> for updates on additional info sessions, recruitment deadlines, and coffee chats.
         </p>
 
+        {/* NEW: Coffee Chat section */}
+        <div className="coffee-chat">
+          <div className="coffee-chat__text">
+            <h2>COFFEE CHATS</h2>
+            <p>
+              Want to learn more one-on-one about CUAD, roles, or what it’s like on the team?
+              Book a quick coffee chat with a team member using the link.
+            </p>
+          </div>
+          <div className="coffee-chat__action">
+            <a
+              href="https://calendar.app.google/KzHDs7gz72CmhY5H6"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Book a Coffee Chat"
+            >
+              <button className="apply-button">Book a Coffee Chat</button>
+            </a>
+          </div>
+        </div>
+
         <h2>INFORMATION SESSIONS</h2>
 
         <div className="info-section">
