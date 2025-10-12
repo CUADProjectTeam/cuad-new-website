@@ -114,6 +114,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Benny.JPG', name: 'Benny Zhu', team: 'Electrical' },
     { image: './images/Members/CUAD_Catherine.JPG', name: 'Catherine  Cheng', team: 'Electrical' },
     { image: './images/Members/CUAD_Cindy.jpeg', name: 'Cindy Wang', team: 'Business' },
+    { image: './images/Members/CUAD_David.JPG', name: 'David Diao', team: 'Business' },
     { image: './images/Members/CUAD_Elizabath.jpeg', name: 'Elizabeth Chen', team: 'Computer Science' },
     { image: './images/Members/CUAD_Geneustace.jpeg', name: 'Geneustace Wickasono', team: 'Electrical' },
     { image: './images/Members/CUAD_Hannah.jpeg', name: 'Hannah Wang', team: 'Business' },
