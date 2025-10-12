@@ -62,7 +62,7 @@ const ApplyPage = () => {
         <div className="info-notice">
           <h2>INFORMATION SESSIONS</h2>
           <p className="muted">
-            We are not hosting info sessions this fall. Info sessions will resume in the spring — join the mailing list for dates.
+            We are done hosting our info sessions this fall. Info sessions will resume in the spring.
           </p>
         </div>
 
