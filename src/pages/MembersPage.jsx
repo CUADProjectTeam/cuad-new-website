@@ -129,7 +129,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Khushi.JPG', name: 'Khushi Thapar', team: 'Business' },
     { image: './images/Members/CUAD_MarcoXerri.jpeg', name: 'Marco Xerri', team: 'Mechanical' },
     { image: './images/Members/CUAD_MarcosMartinez.jpeg', name: 'Marcos Martinez', team: 'Mechanical' },
-    { image: './images/Members/CUAD_Nando.JPG', name: 'Nandiniy Velayudhan_Dhamrait', team: 'Business' },
+    { image: './images/Members/CUAD_Nando.JPG', name: 'Nandiniy Velayudhan-Dhamrait', team: 'Business' },
     { image: './images/Members/CUAD_Nathan.jpeg', name: 'Nathan Sheng', team: 'Mechanical' },
     { image: './images/Members/CUAD_Pavithra.jpeg', name: 'Pavithra Kamatchi Soundaram', team: 'Computer Science' },
     { image: './images/Members/CUAD_Pragya.JPG', name: 'Pragya Agarwal', team: 'Electrical' },
@@ -144,8 +144,7 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Wasif.JPG', name: 'Wasif Atcha', team: 'Mechanical' },
     { image: './images/Members/CUAD_WeiYi.jpeg', name: 'Weiyi Huang', team: 'Electrical' },
 
-    //Newbies
-    //{ image: './images/Members/CUAD_WhiteImage.jpeg', name: 'Nebil Mohammed', team: 'Business' }, //no pic
+  
   ];
 
   // Separate leads from other members
@@ -168,7 +167,7 @@ const MembersPage = () => {
           <img src="./images/team-photo.webp" alt="Team" />
         </div>
         <div className="unique-description">
-          <h1 className="unique-num">40</h1>
+          <h1 className="unique-num">47</h1>
           <h1 className="unique-members">Members</h1>
           <p className="unique-caption">
             At Cornell University Auto Drone, we're proud to have a diverse group of talented individuals from various fields of study at Cornell University. Our team members bring a mix of skills and passions to the table, making our project a hub of innovation and expertise.
