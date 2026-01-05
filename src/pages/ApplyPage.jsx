@@ -37,7 +37,7 @@ const ApplyPage = () => {
               rel="noreferrer"
             >
               <button className="apply-button">
-                Apply – Graphic Designer
+                Apply Here
               </button>
             </a>
           </div>
