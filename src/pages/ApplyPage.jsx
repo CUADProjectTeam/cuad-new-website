@@ -1,9 +1,8 @@
 import React from 'react';
 import './ApplyPage.css';
-// import Stats from "../components/Stats" // Uncomment if you actually use this elsewhere
 
 const ApplyPage = () => {
-  const year = 2025; // keep if you reference it elsewhere
+  const year = 2026;
 
   return (
     <div className="apply-page">
@@ -21,49 +20,27 @@ const ApplyPage = () => {
         <div className="application">
           <h2>APPLICATIONS</h2>
           <p className="application-text">
-            This semester, CUAD’s Electrical, Mechanical, Software, and Business subteams are recruiting new members.
-            The Fall 2025 application is now open to freshmen and transfer students, with a deadline of Thursday, October 16. For more information
-            about our project team, please visit our website.
+            For Spring 2026, CUAD is recruiting new members exclusively for the Business subteam,
+            with openings for Web Developers and Graphic Designers only. The Spring 2026 application
+            is open to all students, with a deadline of Thursday, January 29.
+            <br /><br />
+            We will not be hosting mailing lists, coffee chats, or information sessions this cycle.
+            If you have any questions about the application or roles, please reach out to
+            <a className="link" href="mailto:cuautodrone@gmail.com"> cuautodrone@gmail.com</a>.
           </p>
-          <div>
-            <a href='https://forms.gle/v981DSWNW8nJ3C2P6' target="_blank" rel="noreferrer">
-              <button className='apply-button'>Apply Now</button>
-            </a>
-          </div>
-        </div>
 
-        <h2>MAILING LIST</h2>
-        <p>
-          Sign up to <a className='link' href='https://forms.gle/pJRqaUFkTLRQc3NY8' target="_blank" rel="noreferrer">our email list</a> for updates on spring info sessions, recruitment deadlines, and coffee chats.
-        </p>
+          <div className="apply-buttons">
 
-        {/* Coffee Chat section */}
-        <div className="coffee-chat">
-          <div className="coffee-chat__text">
-            <h2>COFFEE CHATS</h2>
-            <p>
-              Want to learn more one-on-one about CUAD, roles, or what it’s like on the team?
-              Book a quick coffee chat with a team member using the link.
-            </p>
-          </div>
-          <div className="coffee-chat__action">
             <a
-              href="https://calendar.app.google/KzHDs7gz72CmhY5H6"
+              href="https://forms.gle/MRno8C7B42dQnn4i7"
               target="_blank"
               rel="noreferrer"
-              aria-label="Book a Coffee Chat"
             >
-              <button className="apply-button">Book a Coffee Chat</button>
+              <button className="apply-button">
+                Apply – Graphic Designer
+              </button>
             </a>
           </div>
-        </div>
-
-        {/* Info Sessions Notice */}
-        <div className="info-notice">
-          <h2>INFORMATION SESSIONS</h2>
-          <p className="muted">
-            We are done hosting our info sessions this fall. Info sessions will resume in the spring.
-          </p>
         </div>
 
         <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
