@@ -159,7 +159,7 @@ const MembersPage = () => {
     <div className="members-page">
       <section className="unique-team-banner">
         <div className='unique-images'>
-          <img src="./images/team-photo.webp" alt="Team" />
+          <img src="./images/team-photo.webp" alt="Team" loading="lazy" />
         </div>
         <div className="unique-description">
           <h1 className="unique-num">47</h1>
@@ -177,7 +177,7 @@ const MembersPage = () => {
         <div className="members-grid">
           {leads.map((lead, index) => (
             <div key={index} className="member-card">
-              <img src={lead.image} alt={lead.name} className="member-image" />
+              <img src={lead.image} alt={lead.name} className="member-image" loading="lazy" />
               <h3 className="member-name">{lead.name}</h3>
               <p className="member-role">{lead.team}</p>
             </div>
@@ -192,7 +192,7 @@ const MembersPage = () => {
           <div className="members-grid">
             {membersByTeam[team].map((member, index) => (
               <div key={index} className="member-card">
-                <img src={member.image} alt={member.name} className="member-image" />
+                <img src={member.image} alt={member.name} className="member-image" loading="lazy" />
                 <h3 className="member-name">{member.name}</h3>
               </div>
             ))}
