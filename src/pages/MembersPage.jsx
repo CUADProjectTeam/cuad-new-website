@@ -113,12 +113,10 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Benny.JPG', name: 'Benny Zhu', team: 'Electrical' },
     { image: './images/Members/CUAD_Bojro.JPG', name: 'Bojro Das', team: 'Computer Science' },
     { image: './images/Members/CUAD_Catherine.JPG', name: 'Catherine  Cheng', team: 'Electrical' },
-    { image: './images/Members/CUAD_Cindy.jpeg', name: 'Cindy Wang', team: 'Business' },
     { image: './images/Members/CUAD_David.JPG', name: 'David Diao', team: 'Business' },
     { image: './images/Members/CUAD_Emory.JPG', name: 'Emory Vazquez', team: 'Computer Science' },
     { image: './images/Members/CUAD_Frances.JPG', name: 'Frances Hodson', team: 'Mechanical' },
     { image: './images/Members/CUAD_Geneustace.jpeg', name: 'Geneustace Wickasono', team: 'Electrical' },
-    { image: './images/Members/CUAD_Hannah.jpeg', name: 'Hannah Wang', team: 'Business' },
     { image: './images/Members/CUAD_JessicaAn.jpeg', name: 'Jessica An', team: 'Mechanical' },
     { image: './images/Members/CUAD_Jiya.JPG', name: 'Jiya Choudhary', team: 'Computer Science' },
     { image: './images/Members/CUAD_Jason.JPG', name: 'Jason Chen', team: 'Computer Science' },
@@ -136,7 +134,6 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Trishia.JPG', name: 'Trishia Khandelwal', team: 'Computer Science' },
     { image: './images/Members/CUAD_Thomas.jpeg', name: 'Thomas Meyer', team: 'Mechanical' },
     { image: './images/Members/CUAD_Toby.JPG', name: 'Toby Huynh', team: 'Electrical' },
-    { image: './images/Members/CUAD_Wasif.JPG', name: 'Wasif Atcha', team: 'Mechanical' },
     { image: './images/Members/CUAD_WeiYi.jpeg', name: 'Weiyi Huang', team: 'Electrical' },
 
   
