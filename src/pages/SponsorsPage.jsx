@@ -4,7 +4,7 @@ import './SponsorsPage.css';
 const sponsors = {
     "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg"],
     "gold": [],
-    "silver": ["./images/Hargrave-logo.webp"],
+    "silver": ["./images/Hargrave-logo.webp", "./images/protopasa-logo.webp"],
     "bronze": [],
 }
 const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png", "./images/APC-logo.webp"]
