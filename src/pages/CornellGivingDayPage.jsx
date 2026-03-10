@@ -12,7 +12,7 @@ const CornellGivingDayPage = () => {
                 <div className='giving-day-content'>
                     <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
                     <h2>Support CUAD This Giving Day</h2>
-                    <p>March 12th, Cornell Giving Day, is a university-wide celebration of giving that takes place annually. It's a day when Cornell community members come together to support the causes and organizations that matter most to them.</p>
+                    <p>March 13th, Cornell's Giving Day, is a university-wide celebration of giving that takes place annually. It's a day when Cornell community members come together to support the causes and organizations that matter most to them.</p>
                     <p>CUAD relies on the generosity of donors like you to continue building cutting-edge autonomous drone technology. Your support directly impacts our ability to:</p>
                     <ul>
                         <li>Design and build advanced UAVs that push the boundaries of aerospace engineering</li>
@@ -26,7 +26,7 @@ const CornellGivingDayPage = () => {
                     </a>
                 </div>
                 <div className='giving-day-image'>
-                    <img src="./images/flippy2.webp" alt="CUAD Drone" />
+                    <img src="./images/thumbnail.jpeg" alt="CUAD Drone" />
                 </div>
             </div>
             <div className='giving-day-highlight'>
