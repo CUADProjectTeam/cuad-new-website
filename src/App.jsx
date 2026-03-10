@@ -10,6 +10,7 @@ import MembersPage from './pages/MembersPage';
 import DonatePage from './pages/DonatePage';
 import SponsorsPage from './pages/SponsorsPage';
 import ApplyPage from './pages/ApplyPage';
+import CornellGivingDayPage from './pages/CornellGivingDayPage';
 
 const HashRedirect = () => {
   const navigate = useNavigate();
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/sponsors" element={<SponsorsPage />} />
         <Route path="/apply" element={<ApplyPage />} />
+        <Route path="/giving-day" element={<CornellGivingDayPage />} />
       </Routes>
       <Footer />
     </Router>
