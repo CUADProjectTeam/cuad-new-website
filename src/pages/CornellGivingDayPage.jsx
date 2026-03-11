@@ -17,11 +17,11 @@ const CornellGivingDayPage = () => {
                     <ul>
                         <li>Design and build advanced UAVs that push the boundaries of aerospace engineering</li>
                         <li>Provide hands-on experience for our 47+ member team across four specialized subteams</li>
-                        <li>Access essential materials and equipment, from carbon fiber to high-performance motors</li>
+                        <li>Access essential materials and equipment, from caqrbon fiber to high-performance motors</li>
                         <li>Compete in international robotics competitions and showcase Cornell's innovation</li>
                     </ul>
                     <p>Whether you're a current student, alumni, or passionate supporter of engineering excellence, your contribution on Cornell Giving Day makes a real difference in our mission to advance autonomous drone technology.</p>
-                    <a href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=16421&bledit=1&dids=5482" target='_blank' rel="noreferrer">
+                    <a href="https://givingday.cornell.edu/campaigns/autonomous-drone-cuad-gift" target='_blank' rel="noreferrer">
                         <button className='giving-day-btn'>Donate on Giving Day</button>
                     </a>
                 </div>
