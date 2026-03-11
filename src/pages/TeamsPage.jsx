@@ -1,6 +1,7 @@
 import React from 'react';
 import './TeamsPage.css';
 import ImageCarousel from '../components/ImageCarousel';
+import PageHeader from '../components/PageHeader';
 
 const Team = ({ title, description, date, images }) => {
     return (
@@ -35,14 +36,11 @@ const teams = {
 
 const TeamsPage = () => {
     return <>
-        <section className="team-banner">
-            <div className='images'><img src="./images/team-photo.webp" /></div>
-            <div className="description">
-                <h1 id="num4">04</h1>
-                <h1 id="subteams">Subteams</h1>
-                <p>CUAD has 4 subteams that coordinate closely to integrate our extreme UAVs. Teams meet individually during the week to complete tasks, and all members work together on integration at the HVL.</p>
-            </div>
-        </section>
+        <PageHeader 
+            title="Our Subteams"
+            subtitle="CUAD has 4 subteams that coordinate closely to integrate our extreme UAVs. Teams meet individually during the week to complete tasks, and all members work together on integration at the HVL."
+            backgroundImage="./images/team-photo.webp"
+        />
         <ul className='team-list'>
             {Object.entries(teams).map(([title, values]) => {
                 return (

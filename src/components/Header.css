@@ -3,6 +3,12 @@
 .header {
   justify-content: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
@@ -12,7 +18,7 @@ nav ul {
   font-family: 'Lexend Deca', sans-serif;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 15px 0;
 }
 
 nav a {
@@ -20,8 +26,50 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #333;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-red);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-red);
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 a.active {
   color: var(--accent-red);
+  font-weight: 700;
+}
+
+a.active::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 12px 10px;
+  }
+
+  nav a {
+    font-size: clamp(0.65em, 1vw, 1em);
+    padding: 5px 0;
+  }
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import MemberCard from '../components/MemberCard';
 import './MembersPage.css'
 import Stats from "../components/Stats"
+import PageHeader from '../components/PageHeader'
 
 // const MembersPage = () => {
 //   const stats = [
@@ -154,18 +155,11 @@ const MembersPage = () => {
 
   return (
     <div className="members-page">
-      <section className="unique-team-banner">
-        <div className='unique-images'>
-          <img src="./images/team-photo.webp" alt="Team" loading="lazy" />
-        </div>
-        <div className="unique-description">
-          <h1 className="unique-num">47</h1>
-          <h1 className="unique-members">Members</h1>
-          <p className="unique-caption">
-            At Cornell University Auto Drone, we're proud to have a diverse group of talented individuals from various fields of study at Cornell University. Our team members bring a mix of skills and passions to the table, making our project a hub of innovation and expertise.
-          </p>
-        </div>
-      </section>
+      <PageHeader 
+        title="Our Members"
+        subtitle="A diverse group of talented individuals from various fields of study at Cornell University, united in innovation and collaboration."
+        backgroundImage="./images/team-photo.webp"
+      />
       <h1 className="members-title">Meet Our Team</h1>
 
       {/* Leads Section */}

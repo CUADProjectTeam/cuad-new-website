@@ -1,5 +1,6 @@
 import React from 'react';
 import './SponsorsPage.css';
+import PageHeader from '../components/PageHeader';
 
 const sponsors = {
     "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg"],
@@ -12,10 +13,11 @@ const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png",
 
 const SponsorsPage = () => {
     return (<>
-        <div className='sponsor-header'>
-            <img src="./images/sponsors-header.webp" />
-            <h1>Supporting...</h1>
-        </div>
+        <PageHeader 
+            title="Supporting Innovation"
+            subtitle="Thank you to the partners who make CUAD possible"
+            backgroundImage="./images/sponsors-header.webp"
+        />
         <div className='sponsor-body'>
             <div className='sponsor-drone'>
                 <img src="./images/flippy2.webp" />

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './DronesPage.css';
 import Drone, { DeadDrone } from '../components/Drone'
+import PageHeader from '../components/PageHeader'
 
 const drones = {
     'EY009': {
@@ -74,13 +75,12 @@ const deadDrones = {
 const DronesPage = () => {
     return (
         <>
-            <div className='title-card'>
-                <img src='./images/drone-title.webp' />
-                <div className='title-text'>
-                    <img src='./images/CUAD.svg' />
-                    <h1>Drones</h1>
-                </div>
-            </div>
+            <PageHeader 
+                title="Our Drones"
+                subtitle="Cutting-edge autonomous aerial vehicles pushing the boundaries of UAV technology"
+                backgroundImage="./images/drone-title.webp"
+                showLogo={true}
+            />
             <div className='active-drones'>
                 <ul className='dot-lines'>
                     {Object.entries(drones).map(([], index) => {

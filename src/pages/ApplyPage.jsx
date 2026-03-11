@@ -1,22 +1,18 @@
 import React from 'react';
 import './ApplyPage.css';
+import PageHeader from '../components/PageHeader';
 
 const ApplyPage = () => {
   const year = 2026;
 
   return (
     <div className="apply-page">
+      <PageHeader 
+        title="Join Our Team"
+        subtitle="Help us push the boundaries of autonomous drone technology"
+      />
+
       <div className="main-content">
-        <div className="drone-images">
-          <img src="./images/logo-sketch.webp" alt="Red Drone Logo" className="red-drone" />
-          <img src="./images/flippy2.webp" alt="Flippy Drone Outline" className="drone-outline" />
-        </div>
-
-        <div className="apply-header">
-          <h1 className="apply-to">APPLY TO</h1>
-          <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
-        </div>
-
         <div className="application">
           <h2>APPLICATIONS</h2>
           <p className="application-text">
@@ -25,7 +21,6 @@ const ApplyPage = () => {
             If you have any questions about the application or roles, please reach out to
             <a className="link" href="mailto:cuautodrone@gmail.com"> cuautodrone@gmail.com</a>.
           </p>
-
         </div>
 
         <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />

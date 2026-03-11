@@ -1,17 +1,17 @@
 import React from 'react';
 import './AboutPage.css';
 import Stats from "../components/Stats"
+import PageHeader from '../components/PageHeader'
 
 const AboutPage = () => {
   return (
     <section id="about" className="about">
-      <div className="overall-flex">
-        <img className="bg" src="images/AboutPageDrone.webp" alt="Drone" />
-        <div className="cuad-container">
-          <img className="cuad" src="images/CUAD.svg" alt="CUAD" />
-          <p className="cuad-text">Cornell University Autonomous Drone (pronounced like quad) is an interdisciplinary student-run project team that designs, builds, and operates aerial robotics.</p>
-        </div>
-      </div>
+      <PageHeader 
+        title="About Us" 
+        subtitle="Cornell University Autonomous Drone is an interdisciplinary student-run project team that designs, builds, and operates aerial robotics."
+        backgroundImage="images/AboutPageDrone.webp"
+        showLogo={true}
+      />
       <div className="about-section">
         <div className='dot-lines'>
           <div key={`0-dot`} className='dot'></div>
