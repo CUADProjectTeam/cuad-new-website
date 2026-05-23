@@ -3,10 +3,12 @@ import './TeamsPage.css';
 import ImageCarousel from '../components/ImageCarousel';
 import PageHeader from '../components/PageHeader';
 
-const Team = ({ title, description, date, images }) => {
+const Team = ({ title, description, images }) => {
     return (
         <section className="team-section">
-            <div className='team-images'><ImageCarousel images={images} /></div>
+            <div className='team-images'>
+                <ImageCarousel images={images} />
+            </div>
             <div className="description">
                 <h1>{title}</h1>
                 <p>{description}</p>
@@ -41,17 +43,16 @@ const TeamsPage = () => {
             subtitle="CUAD has 4 subteams that coordinate closely to integrate our extreme UAVs. Teams meet individually during the week to complete tasks, and all members work together on integration at the HVL."
             backgroundImage="./images/team-photo.webp"
         />
-        <ul className='team-list'>
-            {Object.entries(teams).map(([title, values]) => {
-                return (
-                    <Team
-                        key={title}
-                        title={title}
-                        description={values.description}
-                        images={values.images}
-                    />)
-            })}
-        </ul>
+        <div className='team-list'>
+            {Object.entries(teams).map(([title, values]) => (
+                <Team
+                    key={title}
+                    title={title}
+                    description={values.description}
+                    images={values.images}
+                />
+            ))}
+        </div>
     </>
 }
 

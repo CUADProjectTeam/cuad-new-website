@@ -3,13 +3,12 @@ import './SponsorsPage.css';
 import PageHeader from '../components/PageHeader';
 
 const sponsors = {
-    "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg"],
+    "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg","./images/altium_logos.png"],
     "gold": [],
-    "silver": ["./images/Hargrave-logo.webp", "./images/protopasta_logo.webp"],
-    "bronze": [],
+    "silver": ["./images/Hargrave-logo.webp", "./images/protopasta_logo.webp", "./images/Luxonis.webp"],
+    "bronze": ["./images/Robofusion.webp", "./images/Phoenix_UAS.webp"],
 }
 const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png", "./images/APC-logo.webp"]
-
 
 const SponsorsPage = () => {
     return (<>
@@ -56,7 +55,7 @@ const SponsorsPage = () => {
                             <h3>{`${level} sponsor${sponsors.length == 1 ? "" : "s"}`}</h3>
                             <div className='logos'>
                                 {sponsors.map((img) => {
-                                    return <div className={level}><img className='sponsor-logo' src={img} /></div>
+                                    return <div className={`sponsor-card ${level}`}><img className='sponsor-logo' src={img} /></div>
                                 })}
                             </div>
                         </div>
@@ -71,7 +70,7 @@ const SponsorsPage = () => {
             <h2>And special thanks to...</h2>
             <div className='logos'>
                 {special_thanks.map((img) => {
-                    return <div className="silver"><img className='sponsor-logo' src={img} /></div>
+                    return <div className="sponsor-card silver"><img className='sponsor-logo' src={img} /></div>
                 })}
             </div>
         </section>
