@@ -55,7 +55,7 @@
     font-weight: 300;
     font-size: 5vw;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: .25em 0;
 }
 
@@ -91,7 +91,7 @@
 
 .sponsor-logos h2 {
     font-size: 1.5em;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-decoration: underline;
 }

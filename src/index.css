@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
   --accent-red: #E31E24;
@@ -7,12 +7,9 @@
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Helvetica';
+  font-family: 'Poppins', sans-serif;
   word-break: break-word;
 }
 
@@ -39,7 +36,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   color: #fff;
-  font-family: 'Inter', 'sans-serif';
+  font-family: 'Poppins', sans-serif;
 }
 
 button:hover {

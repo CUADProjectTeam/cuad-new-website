@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .page-header {
   position: relative;
@@ -53,7 +53,7 @@
 }
 
 .page-header-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 300;
   margin: 0;
