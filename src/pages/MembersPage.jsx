@@ -1,5 +1,6 @@
 // MembersPage.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import MemberCard from '../components/MemberCard';
 import './MembersPage.css'
 import Stats from "../components/Stats"
@@ -149,6 +150,15 @@ const MembersPage = () => {
     setSelectedMember(null);
   };
 
+  // Close modal on Escape key for accessibility
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape' && selectedMember) closeModal();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [selectedMember]);
+
   // Separate leads from other members
   const leads = members.filter((member) => member.team.includes('Lead'));
   const nonLeads = members.filter((member) => !member.team.includes('Lead'));
@@ -234,7 +244,7 @@ const MembersPage = () => {
         </div>
       ))}
 
-      {selectedMember && (
+      {selectedMember && ReactDOM.createPortal(
         <div className="member-modal" onClick={closeModal}>
           <div className="member-modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal} aria-label="Close member details">
@@ -258,10 +268,13 @@ const MembersPage = () => {
                 {selectedMember.bio && (
                   <p className="modal-bio">{selectedMember.bio}</p>
                 )}
+                {/* Mobile-friendly close button */}
+                <button className="modal-close-mobile" onClick={closeModal}>Close</button>
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

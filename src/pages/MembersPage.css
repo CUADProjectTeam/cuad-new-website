@@ -27,7 +27,7 @@
 }
 
 .unique-description {
-    background-color: rgba(255, 255, 255, 0.95); /* Light transparent background */
+    background-color: rgba(255, 255, 255, 0.95); 
     padding: 20px 30px;
     border-radius: 8px;
     width: 40%;
@@ -38,9 +38,9 @@
     word-break: keep-all;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 400;
-    font-size: 10vw; /* Adjusted for better scaling */
+    font-size: 10vw; 
     margin: 0;
-    color: var(--accent-red); /* Ensure the red matches your theme */
+    color: var(--accent-red); 
 }
 
 .unique-members {
@@ -129,7 +129,7 @@
   
   .members-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Larger cards */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 40px;
     justify-content: center;
   }
@@ -174,17 +174,17 @@
 
   .member-name {
     margin-top: 15px;
-    font-size: 1.6rem; /* Larger name text */
+    font-size: 1.6rem; 
     font-weight: bold;
     color: #333;
-    letter-spacing: 0.5px; /* Slight letter spacing for readability */
+    letter-spacing: 0.5px; 
   }
   
   .member-role {
-    font-size: 1.1rem; /* Slightly larger role text */
+    font-size: 1.1rem; 
     color: #555;
     margin-top: 10px;
-    font-style: italic; /* Italicized role for visual distinction */
+    font-style: italic; 
   }
   
   .member-card::before {
@@ -193,7 +193,7 @@
     width: 80px;
     height: 3px;
     margin: 10px auto;
-    background-color: #ff4c4c; /* Accent color (Cornell red) */
+    background-color: #ff4c4c; 
     border-radius: 2px;
   }
 
@@ -204,20 +204,43 @@
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 50;
+    z-index: 900; 
     padding: 20px;
   }
 
   .member-modal-content {
     position: relative;
-    max-width: 800px;
+    max-width: 520px;
     width: 100%;
     background: #ffffff;
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 16px;
+    padding: 20px;
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+    z-index: 910; 
     text-align: left;
     font-family: 'Poppins', sans-serif;
+  }
+
+  /* Larger modal for desktop screens */
+  @media screen and (min-width: 992px) {
+    .member-modal-content {
+      max-width: 760px;
+      padding: 28px;
+      border-radius: 20px;
+    }
+
+    .modal-body {
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .modal-image {
+      width: 220px;
+      height: 220px;
+    }
+
+    .modal-name { font-size: 2rem; }
+    .modal-bio { font-size: 1rem; max-width: 700px; }
   }
 
   .modal-close {
@@ -230,7 +253,17 @@
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
-    padding: 0;
+    padding: 8px; 
+    border-radius: 8px;
+    background: rgba(0,0,0,0.03);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    min-height: 36px;
+    z-index: 920;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    touch-action: manipulation;
   }
 
   .modal-close:hover {
@@ -240,13 +273,13 @@
   .modal-body {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 18px;
     flex-wrap: wrap;
   }
 
   .modal-image {
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 0;
     flex-shrink: 0;
@@ -259,7 +292,7 @@
 
   .modal-name {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #222;
   }
 
@@ -288,8 +321,8 @@
     margin: 0;
     color: #333;
     line-height: 1.8;
-    font-size: 1rem;
-    max-width: 700px;
+    font-size: 0.95rem;
+    max-width: 440px;
   }
   
   @media screen and (max-width: 768px) {
@@ -333,4 +366,63 @@
       height: 220px;
     }
   }
+  
+  /* Mobile: make modal stack vertically so text doesn't get squeezed */
+  @media screen and (max-width: 600px) {
+    .member-modal {
+      padding: 12px;
+    }
+
+    .member-modal-content {
+      padding: 10px;
+      border-radius: 12px;
+      max-width: 420px;
+    }
+
+    .modal-body {
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .modal-image {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      margin: 0 auto;
+      flex-shrink: 0;
+    }
+
+    .modal-detail-content {
+      flex: initial;
+    }
+
+    .modal-name { font-size: 1.5rem; }
+    .modal-role { font-size: 1rem; }
+    .modal-bio { max-width: none; font-size: 0.95rem; }
+    .modal-close {
+      top: 10px;
+      right: 10px;
+      font-size: 1.4rem;
+      min-width: 40px;
+      min-height: 40px;
+      padding: 6px;
+    }
+    /* Add a large, easy-to-tap close button at the bottom on mobile */
+    .modal-close-mobile {
+      display: block;
+      width: 100%;
+      margin-top: 18px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: none;
+      background: var(--logo-red, #B42025);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  /* Hide the mobile close button by default */
+  .modal-close-mobile { display: none; }
   
