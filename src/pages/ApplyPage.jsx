@@ -3,8 +3,6 @@ import './ApplyPage.css';
 import PageHeader from '../components/PageHeader';
 
 const ApplyPage = () => {
-  const year = 2026;
-
   return (
     <div className="apply-page">
       <PageHeader 
@@ -12,19 +10,64 @@ const ApplyPage = () => {
         subtitle="Help us push the boundaries of autonomous drone technology"
       />
 
-      <div className="main-content">
-        <div className="application">
-          <h2>APPLICATIONS</h2>
-          <p className="application-text">
-            We have now finished recruiting for the Spring 2026 season. We will be recruiting again in Fall 2026, so stay tuned for our info sessions and coffee chats!
-            <br /><br />
-            If you have any questions about the application or roles, please reach out to
-            <a className="link" href="mailto:cuautodrone@gmail.com"> cuautodrone@gmail.com</a>.
+      <main className="apply-content">
+        <section className="apply-intro" aria-labelledby="recruiting-heading">
+          <p className="section-kicker">Fall 2026 recruitment</p>
+          <p>
+            We are only recruiting upperclassmen for the Mechanical Subteam. The
+            deadline to apply is Thursday, September 3 at 11:59 PM. Freshmen may apply
+            to all subteams, with applications due Thursday, October 15 at 11:59 PM.
+            Coffee chats will be announced soon.
           </p>
-        </div>
+          <div className="apply-actions">
+            <a
+              className="apply-action apply-action-primary"
+              href="https://docs.google.com/forms/d/1BoZJ9aoTkygncROi-5zc4uEzd7hccPrFqwM7_gGtzd4/viewform?edit_requested=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Apply now <span aria-hidden="true">-&gt;</span>
+            </a>
+            <a
+              className="apply-action apply-action-secondary"
+              href="https://cuad.kit.com/c49bad1c50"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join the mailing list <span aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
+        </section>
 
-        <img src="./images/graph.webp" alt="Grid Background" className="grid-background" />
-      </div>
+        <section className="sessions-section" aria-labelledby="sessions-heading">
+          <div className="sessions-heading">
+            <p className="section-kicker">Meet the team</p>
+            <h2 id="sessions-heading">Information sessions</h2>
+            <p>Locations TBA.</p>
+          </div>
+          <div className="calendar" aria-label="Fall 2026 information session dates">
+            <div className="calendar-month">
+              <h3>September <span>2026</span></h3>
+              <div className="calendar-dates">
+                <div className="calendar-date"><strong>02</strong><span>Wednesday</span></div>
+                <div className="calendar-date"><strong>10</strong><span>Thursday</span></div>
+                <div className="calendar-date"><strong>24</strong><span>Thursday</span></div>
+              </div>
+            </div>
+            <div className="calendar-month">
+              <h3>October <span>2026</span></h3>
+              <div className="calendar-dates">
+                <div className="calendar-date"><strong>08</strong><span>Thursday</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="apply-contact">
+          <p>Questions about applying?</p>
+          <a className="link" href="mailto:cuautodrone@gmail.com">cuautodrone@gmail.com</a>
+        </section>
+      </main>
     </div>
   );
 };

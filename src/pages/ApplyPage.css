@@ -1,287 +1,101 @@
 .apply-page {
+  background: #f7f4ef;
+  color: #242424;
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  overflow: hidden;
+  padding-bottom: 80px;
 }
 
-.top-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.top-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.top-nav a.active {
-  color: red;
-}
-
-.main-content {
+.apply-content {
+  width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 20px;
-  position: relative;
-  z-index: 1;
 }
 
-.drone-images {
-  position: relative;
-  height: 20vw;
-  z-index: -1;
+.apply-intro {
+  max-width: 760px;
+  padding: 20px 0 72px;
 }
 
-.main-content h2 {
-  font-weight: 300;
+.section-kicker {
+  color: var(--logo-red);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 14px;
+  text-transform: uppercase;
 }
 
-.drone-outline {
-  position: absolute;
-  top: -60%;
-  left: -15%;
-  transform: scaleX(-1);
-  width: 75%;
+.apply-content h2 {
+  color: #242424;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  margin: 0 0 22px;
 }
 
-.red-drone {
-  position: absolute;
-  top: -10%;
-  right: -5%;
-  transform: rotate(-5deg);
-  max-width: 50%;
+.apply-intro > p:not(.section-kicker),
+.sessions-heading > p:not(.section-kicker) {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 700px;
 }
 
-.apply-header {
-  padding-right: 5vw;
-}
-
-.apply-to {
-  font-size: 5vw;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-top: 40px;
-}
-
-.info-section {
+.apply-actions {
   display: flex;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.calendar-container {
-  flex: 1;
-  max-width: 40%;
-}
-
-.month-toggle {
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
-}
-
-.mini-calendar {
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.mini-calendar h3 {
-  font-size: clamp(1em, 2.25vw, 2em);
-  text-align: center;
-  margin: 10px 0;
-}
-
-.calendar-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.calendar-header button {
-  color: rgba(0, 0, 0, 0.5);
-  background-color: transparent !important;
-  border: none;
-  font-size: clamp(1em, 2.25vw, 2em);
-  padding: 0.5rem;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.calendar-day-header,
-.calendar-day {
-  text-align: center;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.calendar-day-header {
-  font-size: 1.25vw;
-}
-
-.calendar-day {
-  aspect-ratio: 1;
-  font-size: clamp(.7em, 1.75vw, 2em);
-}
-
-.calendar-day.highlighted {
-  color: white;
-  z-index: 1;
-  position: relative;
-}
-
-
-.highlighted::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 80%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--accent-red);
-  z-index: -1;
-}
-
-.apply-button {
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-.session-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
 }
 
-.session {
-  display: flex;
-  flex-direction: row;
+.apply-action {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 18px;
+  justify-content: space-between;
+  min-width: 190px;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: transform .2s ease, background-color .2s ease;
 }
 
-.session div {
-  padding-top: 10px;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.apply-action:hover { transform: translateY(-3px); }
+.apply-action-primary { background: var(--logo-red); color: white; }
+.apply-action-primary:hover { background: var(--accent-red); }
+.apply-action-secondary { border: 1px solid #242424; color: #242424; }
+.apply-action-secondary:hover { background: white; }
+
+.sessions-section {
+  border-top: 1px solid #d8d2c9;
+  padding: 68px 0 0;
 }
 
-.session h3 {
-  font-size: 48px;
-  color: red;
-  margin: 0;
-}
-
-.session h4 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.session p {
-  margin: 5px 0;
-}
-
-.application-text {
-  margin-bottom: 20px;
-}
-
-.grid-background {
-  position: absolute;
-  bottom: -100px;
-  right: -20%;
-  width: 100%;
-  z-index: 0;
-  opacity: 0.5;
-  transform: scaleX(-1);
-}
-
-.application {
-  width: 60%;
-}
+.sessions-heading { margin-bottom: 34px; }
+.calendar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.calendar-month { background: #fff; border-top: 5px solid var(--accent-red); padding: 26px; }
+.calendar-month h3 { font-family: 'Lexend Deca', sans-serif; font-size: 1.5rem; margin: 0 0 24px; }
+.calendar-month h3 span { color: #999; font-family: 'Poppins', sans-serif; font-size: .85rem; font-weight: 400; margin-left: 8px; }
+.calendar-dates { display: flex; flex-wrap: wrap; gap: 12px; }
+.calendar-date { align-items: center; border-left: 2px solid #e4ded7; display: flex; gap: 12px; padding: 4px 14px; }
+.calendar-date strong { color: var(--logo-red); font-family: 'Lexend Deca', sans-serif; font-size: 2.2rem; line-height: 1; }
+.calendar-date span { color: #666; font-size: .85rem; }
+.apply-contact { border-top: 1px solid #d8d2c9; display: flex; gap: 8px; margin-top: 68px; padding-top: 24px; }
+.apply-contact p { margin: 0; }
+.apply-contact a { font-weight: 600; }
 
 @media screen and (max-width: 768px) {
-  .main-content {
-    padding: 20px;
-  }
-
-  .mini-calendar {
-    padding: 0;
-    margin: 10px auto;
-    width: min(480px, 100%)
-  }
-
-  .calendar-container {
-    max-width: 100%;
-  }
-
-  .calendar-day-header {
-    font-size: min(1em, 3vw);
-  }
-
-  .info-section {
-    flex-direction: column;
-  }
-
-  .session-info {
-    flex-direction: row;
-  }
-
-  .application {
-    width: 100%;
-  }
-
-  .session {
-    flex-direction: column;
-  }
-}
-/* --- Clickability fix for calendar arrows on wide screens --- */
-
-/* 1) Make decorative layers ignore clicks entirely */
-.grid-background,
-.drone-images,
-.drone-images img {
-  pointer-events: none;
+  .apply-content { width: min(100% - 32px, 680px); }
+  .apply-intro { padding-top: 4px; }
+  .calendar { grid-template-columns: 1fr; }
+  .apply-contact { flex-direction: column; }
 }
 
-/* 2) Keep the calendar header & buttons above everything decorative */
-.mini-calendar .calendar-header,
-.mini-calendar .calendar-header button {
-  position: relative;
-  z-index: 10;
-}
-
-/* 3) Hidden arrows shouldn't block clicks */
-.calendar-header .hidden,
-.calendar-button.hidden {
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* (Optional) If anything else still overlaps, raise the whole calendar */
-.calendar-container,
-.mini-calendar {
-  position: relative;
-  z-index: 5;
+@media screen and (max-width: 480px) {
+  .apply-page { padding-bottom: 48px; }
+  .apply-actions { align-items: stretch; flex-direction: column; }
+  .apply-action { width: 100%; }
+  .calendar-month { padding: 22px 18px; }
+  .calendar-date strong { font-size: 1.8rem; }
+  .calendar-date { flex: 1 1 100%; }
 }
