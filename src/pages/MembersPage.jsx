@@ -100,8 +100,9 @@ const MembersPage = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const members = [
     { image: './images/Members/CUAD_John.jpg', name: 'John Apessos', team: 'Full Team  Lead', major: 'Mechanical Engineering', year: '2027', hometown: 'Scarsdale, New York', bio: 'He enjoys fishing, hunting and spending time outdoors.' },
-    { image: './images/Members/CUAD_Lulu.jpg', name: 'Lujine Abdelfattah', team: 'Full Team Lead', major: 'Computer Science', year:'2027', hometown: 'Garfield, New Jersey', bio: 'She is pursuing computer science and growing as a developer. She enjoys reading, watching movies, swimming, and traveling with friends.' }, //no pic
-    { image: './images/Members/CUAD_AllieLin.jpeg', name: 'Allie Lin', team: 'Business Lead' , major: 'Applied Economics and Management', year: '2027'},
+    { image: './images/Members/CUAD_Lulu.jpg', name: 'Lujine Abdelfattah', team: 'Full Team Lead', major: 'Computer Science', year:'2027', hometown: 'Garfield, New Jersey', bio: 'She is pursuing computer science and growing as a developer. She enjoys reading, watching movies, swimming, and traveling with friends.' },
+    { image: './images/Members/CUAD_Nandiniy.jpg', name: 'Nandiniy Velayudhan-Dhamrait', team: 'Business Lead', major: 'Biological Sciences', year: '2028', hometown: 'Seattle, Washington' },
+    { image: './images/Members/CUAD_Sahasra.jpg', name: 'Sahasra Kalwala', team: 'Business Lead', major: 'Economics & Statistics', year: '2029', hometown: 'Aldie, Virginia', bio: 'She enjoys hiking and exploring new restaurants.'},,
     { image: './images/Members/CUAD_JasonP.jpg', name: 'Jason Peskin', team: 'Electrical Lead', major: 'Electrical and Computer Engineering', year: '2027', hometown: 'New York, New York', bio: 'He enjoys playing the guitar and piano, going to Cornell hockey games, and educating the public at the Fuertes Observatory.' },
     { image: './images/Members/CUAD_Abigail.jpg', name: 'Abigail Gabalski', team: 'Electrical Lead', major: 'Electrical and Computer Engineering', year: '2028', hometown: 'Mannassas, Virginia', bio: 'She enjoys playing the violin, cello, and guitar, and singing in choir.' },
     { image: './images/Members/CUAD_Angus.jpg', name: 'Angus Chang', team: 'Mechanical Lead', major: 'Mechanical Engineering', year: '2027', hometown: 'Taiwan', bio: 'He enjoys flying FPV drones.' },
@@ -127,13 +128,12 @@ const MembersPage = () => {
     { image: './images/Members/CUAD_Khushi.jpg', name: 'Khushi Thapar', team: 'Business', major: 'Economics & Psychology', year: '2029', hometown: 'Mumbai, India' },
     { image: './images/Members/CUAD_Marco.jpg', name: 'Marco Xerri', team: 'Mechanical', major: 'Mechanical Engineering', year: '2026', hometown: 'Mount Sinai, New York' },
     { image: './images/Members/CUAD_MarcosMartinez.jpeg', name: 'Marcos Martinez', team: 'Mechanical', major: 'Mechanical Engineering', year: '2028', hometown: 'Bethpage, New York' },
-    { image: './images/Members/CUAD_Nandiniy.jpg', name: 'Nandiniy Velayudhan-Dhamrait', team: 'Business', major: 'Biological Sciences', year: '2028', hometown: 'Seattle, Washington' },
     { image: './images/Members/CUAD_Nathan.jpeg', name: 'Nathan Sheng', team: 'Mechanical', major: 'Mechanical Engineering', year: '2027', hometown: 'Painted Post, New York' },
     { image: './images/Members/CUAD_Pavithra.jpg', name: 'Pavithra Kamatchi Soundaram', team: 'Computer Science' , major: 'Computer Science', year: '2027', hometown: 'Dublin, California' },
     { image: './images/Members/CUAD_Pragya.jpg', name: 'Pragya Agarwal', team: 'Electrical', major: 'Electrical and Computer Engineering', year: '2029', hometown: 'Simi Valley, California' },
     { image: './images/Members/CUAD_Rohan.JPG', name: 'Rohan Shankar', team: 'Computer Science', major: 'Computer Science', year: '2028', hometown: 'Los Altos, California' },
     { image: './images/Members/CUAD_Rumman.jpg', name: 'Rumman Jan', team: 'Electrical', major: 'Electrical and Computer Engineering', year: '2028', hometown: 'Kashmir' },
-    { image: './images/Members/CUAD_Sahasra.jpg', name: 'Sahasra Kalwala', team: 'Business', major: 'Economics & Statistics', year: '2029', hometown: 'Aldie, Virginia', bio: 'She enjoys hiking and exploring new restaurants.'},
+    
     { image: './images/Members/CUAD_Trishia.jpg', name: 'Trishia Khandelwal', team: 'Computer Science', major: 'Computer Science', year: '2029', hometown: 'Cupertino, California' },
     { image: './images/Members/CUAD_Thomas.jpg', name: 'Thomas Meyer', team: 'Mechanical', major: 'Mechanical Engineering', year: '2027', hometown: 'Athens, Georgia' },
     { image: './images/Members/CUAD_Toby.jpg', name: 'Toby Huynh', team: 'Electrical', major: 'Mechanical Engineering', year: '2027', hometown: 'Bayside, New York' },

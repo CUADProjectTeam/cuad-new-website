@@ -13,11 +13,13 @@
 .apply-intro {
   max-width: 760px;
   padding: 20px 0 72px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .section-kicker {
   color: var(--logo-red);
-  font-size: .78rem;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
   margin: 0 0 14px;
@@ -27,7 +29,7 @@
 .apply-content h2 {
   color: #242424;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(32px, 5vw, 61px);
   line-height: 1.1;
   margin: 0 0 22px;
 }
@@ -35,7 +37,7 @@
 .apply-intro > p:not(.section-kicker),
 .sessions-heading > p:not(.section-kicker) {
   color: #555;
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1.8;
   margin: 0;
   max-width: 700px;
@@ -45,6 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  justify-content: center;
   margin-top: 34px;
 }
 
@@ -71,15 +74,16 @@
   padding: 68px 0 0;
 }
 
-.sessions-heading { margin-bottom: 34px; }
+.sessions-heading { margin-bottom: 0; }
+.sessions-heading > p:last-child { text-align: center; }
 .calendar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .calendar-month { background: #fff; border-top: 5px solid var(--accent-red); padding: 26px; }
-.calendar-month h3 { font-family: 'Lexend Deca', sans-serif; font-size: 1.5rem; margin: 0 0 24px; }
-.calendar-month h3 span { color: #999; font-family: 'Poppins', sans-serif; font-size: .85rem; font-weight: 400; margin-left: 8px; }
+.calendar-month h3 { font-family: 'Lexend Deca', sans-serif; font-size: 24px; margin: 0 0 24px; }
+.calendar-month h3 span { color: #999; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; margin-left: 8px; }
 .calendar-dates { display: flex; flex-wrap: wrap; gap: 12px; }
 .calendar-date { align-items: center; border-left: 2px solid #e4ded7; display: flex; gap: 12px; padding: 4px 14px; }
-.calendar-date strong { color: var(--logo-red); font-family: 'Lexend Deca', sans-serif; font-size: 2.2rem; line-height: 1; }
-.calendar-date span { color: #666; font-size: .85rem; }
+.calendar-date strong { color: var(--logo-red); font-family: 'Lexend Deca', sans-serif; font-size: 35px; line-height: 1; }
+.calendar-date span { color: #666; font-size: 14px; }
 .apply-contact { border-top: 1px solid #d8d2c9; display: flex; gap: 8px; margin-top: 68px; padding-top: 24px; }
 .apply-contact p { margin: 0; }
 .apply-contact a { font-weight: 600; }
@@ -96,6 +100,6 @@
   .apply-actions { align-items: stretch; flex-direction: column; }
   .apply-action { width: 100%; }
   .calendar-month { padding: 22px 18px; }
-  .calendar-date strong { font-size: 1.8rem; }
+  .calendar-date strong { font-size: 29px; }
   .calendar-date { flex: 1 1 100%; }
 }
