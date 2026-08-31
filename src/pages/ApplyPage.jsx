@@ -36,6 +36,14 @@ const ApplyPage = () => {
             >
               Join the mailing list <span aria-hidden="true">-&gt;</span>
             </a>
+            <a
+              className="apply-action apply-action-primary"
+              href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3wa2hprdKoB0neS-tR2ZRJWCgMTYLB8DmU_eo="
+              target="_blank"
+              rel="noreferrer"
+            >
+              Coffee Chat our leads to learn more! <span aria-hidden="true">-&gt;</span>
+            </a>
           </div>
         </section>
 
@@ -43,21 +51,21 @@ const ApplyPage = () => {
           <div className="sessions-heading">
             <p className="section-kicker">Meet the team</p>
             <h2 id="sessions-heading">Information sessions</h2>
-            <p>Locations TBA.</p>
+
           </div>
           <div className="calendar" aria-label="Fall 2026 information session dates">
             <div className="calendar-month">
               <h3>September <span>2026</span></h3>
               <div className="calendar-dates">
-                <div className="calendar-date"><strong>02</strong><span>Wednesday</span></div>
-                <div className="calendar-date"><strong>10</strong><span>Thursday</span></div>
-                <div className="calendar-date"><strong>24</strong><span>Thursday</span></div>
+                <div className="calendar-date"><strong>02</strong><span>Klarman Hall G42 at 7 PM</span></div>
+                <div className="calendar-date"><strong>10</strong><span>Gates Hall 114 at 7 PM </span></div>
+                <div className="calendar-date"><strong>24</strong><span>TBA at 8 PM</span></div>
               </div>
             </div>
             <div className="calendar-month">
               <h3>October <span>2026</span></h3>
               <div className="calendar-dates">
-                <div className="calendar-date"><strong>08</strong><span>Thursday</span></div>
+                <div className="calendar-date"><strong>08</strong><span>RPCC 205 at 7 PM</span></div>
               </div>
             </div>
           </div>
