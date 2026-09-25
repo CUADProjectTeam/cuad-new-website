@@ -63,7 +63,7 @@ const ApplyPage = () => {
             <div className="calendar-month">
               <h3>October <span>2026</span></h3>
               <div className="calendar-dates">
-                <div className="calendar-date"><strong>08</strong><span>RPCC 205 at 7 PM</span></div>
+                <div className="calendar-date"><strong>06</strong><span>RPCC 205 at 7 PM</span></div>
               </div>
             </div>
           </div>
