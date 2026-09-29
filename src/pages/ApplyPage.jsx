@@ -14,7 +14,7 @@ const ApplyPage = () => {
         <section className="apply-intro" aria-labelledby="recruiting-heading">
           <p className="section-kicker">Fall 2026 recruitment</p>
           <p>
-            Upperclassmen are only eligible to apply for the mechanical sub team. Freshman are encouraged to apply to any subteam, with applications due Thursday, October 15 at 11:59 PM.
+            Join our team! Freshman are encouraged to apply to any subteam, with applications due Thursday, October 15 at 11:59 PM.
             
           </p>
           <div className="apply-actions">
@@ -33,14 +33,6 @@ const ApplyPage = () => {
               rel="noreferrer"
             >
               Join the mailing list <span aria-hidden="true">-&gt;</span>
-            </a>
-            <a
-              className="apply-action apply-action-primary"
-              href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3wa2hprdKoB0neS-tR2ZRJWCgMTYLB8DmU_eo="
-              target="_blank"
-              rel="noreferrer"
-            >
-              Coffee Chat our team to learn more! <span aria-hidden="true">-&gt;</span>
             </a>
           </div>
         </section>
