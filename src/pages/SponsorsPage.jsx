@@ -3,7 +3,7 @@ import './SponsorsPage.css';
 import PageHeader from '../components/PageHeader';
 
 const sponsors = {
-    "platinum": ["./images/onshape_logo.webp", "./images/simscale-logo.svg","./images/altium_logos.png"],
+    "platinum": ["./images/sandia-logo.JPG","./images/onshape_logo.webp", "./images/simscale-logo.svg","./images/altium_logos.png"],
     "gold": [],
     "silver": ["./images/Hargrave-logo.webp", "./images/protopasta_logo.webp", "./images/Luxonis.webp"],
     "bronze": ["./images/Robofusion.webp", "./images/Phoenix_UAS.webp"],
@@ -53,7 +53,7 @@ const SponsorsPage = () => {
                     {sponsors.length != 0 &&
                         <div>
                             <h3>{`${level} sponsor${sponsors.length == 1 ? "" : "s"}`}</h3>
-                            <div className='logos'>
+                            <div className={`logos ${level === 'platinum' ? 'platinum-logos' : ''}`}>
                                 {sponsors.map((img) => {
                                     return <div className={`sponsor-card ${level}`}><img className='sponsor-logo' src={img} /></div>
                                 })}

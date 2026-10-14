@@ -111,6 +111,13 @@
     padding: 1rem 0;
 }
 
+.platinum-logos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 640px;
+    margin: 0 auto;
+}
+
 .logos::-webkit-scrollbar {
     height: 8px;
 }
@@ -135,7 +142,9 @@
 }
 
 .sponsor-card.platinum {
-    min-width: 260px;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 150px;
 }
 
 .sponsor-card.gold {
@@ -143,11 +152,13 @@
 }
 
 .sponsor-card.silver {
-    min-width: 190px;
+    min-width: 150px;
+    min-height: 110px;
 }
 
 .sponsor-card.bronze {
-    min-width: 170px;
+    min-width: 175px;
+    min-height: 125px;
 }
 
 .sponsor-logo {
@@ -156,6 +167,14 @@
     width: auto;
     height: auto;
     display: block;
+}
+
+.sponsor-card.silver .sponsor-logo {
+    max-height: 60px;
+}
+
+.sponsor-card.bronze .sponsor-logo {
+    max-height: 72px;
 }
 
 
