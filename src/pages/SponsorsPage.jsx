@@ -29,9 +29,9 @@ const SponsorsPage = () => {
                 </a>
             </div>
         </div>
-        <div className='sponsor-body'>
+        <div className='sponsor-body sponsorship-section'>
             <div className='sponsor-text'>
-                <h1>Sponsorships</h1>
+                <h1 id="sponsorships-heading">Sponsorships</h1>
                 <p>We want to thank our corporate sponsors of CUAD. Your support plays a pivotal role in fueling our engineering process to push the boundaries of UAV technology. It is through your funding that we can access the essential materials like carbon fiber, motors, and ESCs required to realize the full potential of our drone designs.</p>
                 <p>If you are interested in sponsoring CUAD, we invite you to explore our sponsorship packet below to learn more about our organization here at Cornell and the sponsorship process.</p>
                 <p>Contact us at <a className='link' href="mailto:cuautodrone@gmail.com" target="_blank" rel="noreferrer">cuautodrone@gmail.com</a> for further questions.</p>

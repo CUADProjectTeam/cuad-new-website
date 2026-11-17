@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, fit = 'cover' }) => {
     useEffect(() => {
         const preloadImages = () => {
             const imagePromises = images.map((src) => {
@@ -34,7 +34,7 @@ const ImageCarousel = ({ images }) => {
     };
 
     return (
-        <div className="carousel">
+        <div className={`carousel carousel-${fit}`}>
             {images.length > 1 && <button className="carousel-button prev" onClick={prevSlide}>
                 &#10094;
             </button>}

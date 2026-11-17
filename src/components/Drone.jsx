@@ -10,7 +10,7 @@ const Drone = ({ title, description, stats, images }) => {
                 <h1>{title}</h1>
             </div>
             <div className="content-container">
-                <div className='images'><ImageCarousel images={images} /></div>
+                <div className='images'><ImageCarousel images={images} fit="contain" /></div>
                 <div className="description">
                     <p>{description}</p>
                     <Stats stats={stats} align="center" />
@@ -24,7 +24,7 @@ const Drone = ({ title, description, stats, images }) => {
 export const DeadDrone = ({ title, description, date, images }) => {
     return (
         <section className="graveyard-section">
-            <div className='images'><ImageCarousel images={images} /></div>
+            <div className='images'><ImageCarousel images={images} fit="contain" /></div>
             <div className="description">
                 <h1>{title}</h1>
                 <h2>{date}</h2>

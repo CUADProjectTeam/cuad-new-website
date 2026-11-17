@@ -1,26 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');
-
 .dynamic-section {
-  padding: 20px;
-  padding-left: 0;
+  width: 100%;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  background: var(--surface-subtle);
+}
+
+.dynamic-section:nth-child(even) {
+  background: var(--page-bg);
+}
+
+.dynamic-section + .dynamic-section {
+  border-top: 1px solid var(--border);
 }
 
 .title-centering h1 {
-  font-size: 3vw;
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
 }
 
 .title-centering {
-  height: 5vw;
+  width: min(1400px, calc(100% - 64px));
+  min-height: 100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 2vw;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .content-container {
@@ -28,45 +37,65 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  min-height: 420px;
+  border-top: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .images {
-  height: 40vw;
+  height: clamp(320px, 42vw, 520px);
   width: 50%;
-  padding: 1vw;
-  padding-right: 0;
+  padding: 0;
+  background: var(--surface-subtle);
 }
 
 .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 2vw;
-  background-color: #fff;
+  padding: clamp(24px, 5vw, 72px);
+  background-color: transparent;
   width: 50%;
+  box-sizing: border-box;
 }
 
 .description p {
   margin: 0;
-  font-size: min(1.6vw, 1.5em);
-  color: #333;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  color: var(--text-secondary);
 }
 
 .dead-drones {
-  margin: 3vw;
+  width: min(1400px, calc(100% - 64px));
+  margin: 3rem auto;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .graveyard-section {
   display: flex;
-  flex-direction: row;
-  width: 90%;
-  margin: auto;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
 }
 
 .graveyard-section>.description {
-  padding-right: 0;
+  width: 100%;
+  min-height: 190px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.graveyard-section .images {
+  width: 100%;
+  height: 300px;
+  padding: 0;
 }
 
 .graveyard-section h1 {
@@ -75,7 +104,7 @@
 }
 
 .graveyard-section h2 {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: var(--font-display);
   font-weight: 100;
   font-size: 1.75em;
   margin-top: .25em;
@@ -83,7 +112,9 @@
 
 @media screen and (max-width: 768px) {
   .title-centering {
-    height: 1.5em;
+    width: calc(100% - 32px);
+    min-height: 76px;
+    padding: 16px 0;
   }
 
   .title-centering h1 {
@@ -91,7 +122,22 @@
   }
 
   .images {
-    padding-right: 10px;
+    height: 70vw;
+    min-height: 240px;
+    max-height: 360px;
+    padding: 0;
+  }
+
+  .description {
+    padding: 24px 20px;
+  }
+
+  .graveyard-section {
+    border-radius: 4px;
+  }
+
+  .dead-drones {
+    width: 100%;
   }
 
   .description p {

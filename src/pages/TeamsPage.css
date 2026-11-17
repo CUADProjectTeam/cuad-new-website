@@ -12,41 +12,52 @@
     grid-template-columns: 35% 65%;
     gap: 2.5rem;
     align-items: center;
-    padding: 2.5rem;
-    background: #ffffff;
-    border-radius: 24px;
-    box-shadow: 0 18px 40px rgba(22, 38, 75, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 0;
+    background: var(--surface);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
 }
 
 .team-section:nth-child(even) {
-    background: #fbfbfb;
+    background: var(--surface-raised);
+    grid-template-columns: 65% 35%;
+}
+
+.team-section:nth-child(even) .team-images {
+    order: 2;
+}
+
+.team-section:nth-child(even) .description {
+    order: 1;
 }
 
 .team-section h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-display);
     font-weight: 600;
-    font-size: clamp(2rem, 2.5vw, 2.6rem);
+    font-size: clamp(1.8rem, 2.4vw, 2.5rem);
     margin: 0 0 1rem;
 }
 
 .team-section .description {
     min-width: 0;
     width: auto;
+    padding: 2.5rem;
 }
 
 .team-section .description p {
     margin: 0;
     line-height: 1.85;
-    color: #333;
-    font-size: 24px;
+    color: var(--text-secondary);
+    font-size: clamp(1rem, 1.35vw, 1.25rem);
     max-width: none;
 }
 
 .team-images {
     width: 100%;
-    min-height: 320px;
-    border-radius: 20px;
+    height: 380px;
+    border-radius: 0;
     overflow: hidden;
     background: #f8f8f8;
     display: flex;
@@ -69,6 +80,15 @@
     .team-section {
         grid-template-columns: 1fr;
         padding: 1.75rem;
+    }
+
+    .team-section:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .team-section:nth-child(even) .team-images,
+    .team-section:nth-child(even) .description {
+        order: initial;
     }
 }
 

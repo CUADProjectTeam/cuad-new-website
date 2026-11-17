@@ -1,7 +1,7 @@
 .apply-page {
-  background: #f7f4ef;
-  color: #242424;
-  font-family: 'Poppins', sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
   padding-bottom: 80px;
 }
 
@@ -19,14 +19,14 @@
   color: var(--logo-red);
   font-size: .78rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   margin: 0 0 14px;
   text-transform: uppercase;
 }
 
 .apply-content h2 {
-  color: #242424;
-  font-family: 'Lexend Deca', sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.8rem);
   line-height: 1.1;
   margin: 0 0 22px;
@@ -34,7 +34,7 @@
 
 .apply-intro > p:not(.section-kicker),
 .sessions-heading > p:not(.section-kicker) {
-  color: #555;
+  color: var(--text-secondary);
   font-size: 1.05rem;
   line-height: 1.8;
   margin: 0;
@@ -63,24 +63,24 @@
 .apply-action:hover { transform: translateY(-3px); }
 .apply-action-primary { background: var(--logo-red); color: white; }
 .apply-action-primary:hover { background: var(--accent-red); }
-.apply-action-secondary { border: 1px solid #242424; color: #242424; }
-.apply-action-secondary:hover { background: white; }
+.apply-action-secondary { border: 1px solid var(--border); color: var(--text-primary); }
+.apply-action-secondary:hover { background: var(--surface-raised); }
 
 .sessions-section {
-  border-top: 1px solid #d8d2c9;
+  border-top: 1px solid var(--border);
   padding: 68px 0 0;
 }
 
 .sessions-heading { margin-bottom: 34px; }
 .calendar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.calendar-month { background: #fff; border-top: 5px solid var(--accent-red); padding: 26px; }
-.calendar-month h3 { font-family: 'Lexend Deca', sans-serif; font-size: 1.5rem; margin: 0 0 24px; }
-.calendar-month h3 span { color: #999; font-family: 'Poppins', sans-serif; font-size: .85rem; font-weight: 400; margin-left: 8px; }
+.calendar-month { background: var(--surface); border: 1px solid var(--border); border-top: 5px solid var(--accent-red); padding: 26px; }
+.calendar-month h3 { font-family: var(--font-display); font-size: 1.5rem; margin: 0 0 24px; }
+.calendar-month h3 span { color: var(--text-muted); font-family: var(--font-body); font-size: .85rem; font-weight: 400; margin-left: 8px; }
 .calendar-dates { display: flex; flex-wrap: wrap; gap: 12px; }
-.calendar-date { align-items: center; border-left: 2px solid #e4ded7; display: flex; gap: 12px; padding: 4px 14px; }
-.calendar-date strong { color: var(--logo-red); font-family: 'Lexend Deca', sans-serif; font-size: 2.2rem; line-height: 1; }
-.calendar-date span { color: #666; font-size: .85rem; }
-.apply-contact { border-top: 1px solid #d8d2c9; display: flex; gap: 8px; margin-top: 68px; padding-top: 24px; }
+.calendar-date { align-items: center; border-left: 2px solid var(--border); display: flex; gap: 12px; padding: 4px 14px; }
+.calendar-date strong { color: var(--logo-red); font-family: var(--font-display); font-size: 2.2rem; line-height: 1; }
+.calendar-date span { color: var(--text-secondary); font-size: .85rem; }
+.apply-contact { border-top: 1px solid var(--border); display: flex; gap: 8px; margin-top: 68px; padding-top: 24px; }
 .apply-contact p { margin: 0; }
 .apply-contact a { font-weight: 600; }
 

@@ -22,7 +22,7 @@
 
 .stat-item h1 {
     word-break: keep-all;
-    font-family: 'Advent Pro', sans-serif;
+    font-family: var(--font-display);
     font-weight: 400;
     font-size: 9vw;
     margin: 0;

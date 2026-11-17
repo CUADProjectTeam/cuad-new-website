@@ -1,25 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 .active-drones {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .drones {
     flex-direction: column;
+    list-style: none;
+    margin: 0;
     padding: 0;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
 }
 
 .dot-lines {
-    padding-top: calc(20px + 1.15vw);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 10%;
-    padding-left: 2vw;
-    padding-bottom: 20px;
+    display: none;
 }
 
 .line {
@@ -42,7 +38,7 @@
 }
 
 .title-card {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--font-display);
     height: 60vw;
 }
 
@@ -65,7 +61,7 @@
 }
 
 .title-text h1 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--font-display);
     font-weight: 400;
     font-size: 18vw;
     margin: 0;
@@ -73,11 +69,15 @@
 }
 
 #graveyard {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-display);
     font-weight: 300;
     font-size: 4vw;
-    padding-left: 45px;
+    width: min(1400px, calc(100% - 64px));
+    margin: 5rem auto 1rem;
+    padding: 0;
+    box-sizing: border-box;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,6 +86,22 @@
     }
 
     .active-drones {
+        padding: 0;
+    }
+
+    .dead-drones {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto;
+        padding: 0 16px;
+    }
+
+    #graveyard {
+        margin: 3rem auto 1rem;
+        width: calc(100% - 32px);
+        padding: 0;
+    }
+
+    .drones {
         justify-content: center;
     }
 

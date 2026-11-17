@@ -89,8 +89,8 @@
         font-size: max(3vw, 12px);
     }
 }.members-page {
-    padding: 20px;
-  }
+  padding: 0 0 80px;
+}
   
   .members-title {
     font-size: 3rem;
@@ -102,7 +102,7 @@
   .members-header-image {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto 30px;
+    margin: 0 auto 48px;
   }
 
   .members-header-image img {
@@ -124,77 +124,106 @@
     margin: 50px 0 30px;
     text-align: center;
     font-weight: bold;
-    color: #333;
+    color: var(--text-primary);
   }
   
   .members-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 210px));
+    justify-content: center;
+    gap: 26px;
+    max-width: 1180px;
+    margin: 0 auto;
     justify-content: center;
   }
   
   .member-card {
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #f9f9f9, #ffffff);
-    transition: transform 0.3s, box-shadow 0.3s;
-    font-family: 'Poppins', 'Inter', sans-serif;
+    position: relative;
+    text-align: left;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    font-family: var(--font-body);
     cursor: pointer;
   }
 
   .member-card:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+    border-color: rgba(227, 30, 36, 0.6);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.42);
+  }
+
+  .member-card:focus-visible {
+    outline: 2px solid var(--accent-red);
+    outline-offset: 3px;
   }
   
   .member-image {
     width: 100%;
-    max-width: 250px;
-    height: 300px;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    border-radius: 8px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
     display: block;
+    filter: brightness(0.9) saturate(0.88);
+    transition: filter 0.25s ease, transform 0.35s ease;
+  }
+
+  .member-card:hover .member-image {
+    filter: brightness(1) saturate(1);
+    transform: scale(1.025);
   }
 
   .member-card-info {
-    padding: 20px 0 0;
+    padding: 16px 18px 20px;
   }
 
   .member-meta {
     margin: 10px 0 0;
     font-size: 1rem;
-    color: #777;
+    color: var(--text-muted);
     font-weight: 500;
   }
 
   .member-name {
-    margin-top: 15px;
-    font-size: 1.6rem; 
+    margin: 0;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #333;
-    letter-spacing: 0.5px; 
+    color: var(--text-primary);
+    letter-spacing: 0.01em;
   }
   
   .member-role {
-    font-size: 1.1rem; 
-    color: #555;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
     margin-top: 10px;
     font-style: italic; 
   }
   
   .member-card::before {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: block;
-    width: 80px;
+    width: 30%;
     height: 3px;
-    margin: 10px auto;
-    background-color: #ff4c4c; 
-    border-radius: 2px;
+    margin: 0;
+    background-color: var(--accent-red);
+    transition: width 0.25s ease;
+  }
+
+  .member-card:hover::before,
+  .member-card:focus-visible::before {
+    width: 100%;
   }
 
   .member-modal {
@@ -206,19 +235,24 @@
     background: rgba(0, 0, 0, 0.7);
     z-index: 900; 
     padding: 20px;
+    overflow-y: auto;
   }
 
   .member-modal-content {
     position: relative;
     max-width: 520px;
     width: 100%;
-    background: #ffffff;
+    max-height: calc(100vh - 40px);
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
     z-index: 910; 
     text-align: left;
     font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   /* Larger modal for desktop screens */
@@ -249,13 +283,13 @@
     right: 18px;
     border: none;
     background: transparent;
-    color: #777;
+    color: var(--text-secondary);
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
     padding: 8px; 
     border-radius: 8px;
-    background: rgba(0,0,0,0.03);
+    background: var(--surface);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -293,25 +327,25 @@
   .modal-name {
     margin: 0;
     font-size: 1.6rem;
-    color: #222;
+    color: var(--text-primary);
   }
 
   .modal-role {
     margin: 2px 0 0;
     font-size: 1.15rem;
-    color: #555;
+    color: var(--text-secondary);
     font-style: italic;
   }
 
   .modal-meta {
     margin: 2px 0 10px;
-    color: #777;
+    color: var(--text-muted);
     font-size: 1rem;
   }
 
   .modal-hometown {
     margin: 0 0 14px;
-    color: #444;
+    color: var(--text-secondary);
     line-height: 1.7;
     font-size: 1rem;
     font-weight: 500;
@@ -319,7 +353,7 @@
 
   .modal-bio {
     margin: 0;
-    color: #333;
+    color: var(--text-secondary);
     line-height: 1.8;
     font-size: 0.95rem;
     max-width: 440px;
@@ -339,31 +373,22 @@
     }
   
     .members-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for smaller screens */
-    }
-  
-    .member-card {
-      padding: 15px;
-    }
-  
-    .member-image {
-      max-width: 200px;
-      height: 250px;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 210px));
     }
   }
   
   @media screen and (max-width: 480px) {
     .members-grid {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller cards for mobile */
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+      gap: 14px;
     }
-  
-    .member-card {
-      padding: 10px;
+
+    .member-card-info {
+      padding: 12px 12px 16px;
     }
-  
-    .member-image {
-      max-width: 180px;
-      height: 220px;
+
+    .member-name {
+      font-size: 1.1rem;
     }
   }
   
