@@ -3,12 +3,12 @@ import './SponsorsPage.css';
 import PageHeader from '../components/PageHeader';
 
 const sponsors = {
-    "platinum": ["./images/sandia-logo.JPG","./images/onshape_logo.webp", "./images/simscale-logo.svg","./images/altium_logos.png"],
+    "platinum": ["./images/sandia-logo.png","./images/onshape_logo.png", "./images/simscale-logo.png","./images/Altium.png"],
     "gold": [],
-    "silver": ["./images/Hargrave-logo.webp", "./images/protopasta_logo.webp", "./images/Luxonis.webp"],
-    "bronze": ["./images/Robofusion.webp", "./images/Phoenix_UAS.webp"],
+    "silver": ["./images/Hargrave-logo.png", "./images/protopasta_logo.png", "./images/Luxonis.png"],
+    "bronze": ["./images/Robofusion.png", "./images/Phoenix_UAS.png"],
 }
-const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png", "./images/APC-logo.webp"]
+const special_thanks = ["./images/demonpower-logo.png", "./images/APD-logo.png", "./images/APC-logo.png"]
 
 const SponsorsPage = () => {
     return (<>
@@ -47,7 +47,7 @@ const SponsorsPage = () => {
         
         <section className='sponsor-logos'>
             
-            <h2>Thank you to our...</h2>
+            <h2>Thank You to Our Sponsors</h2>
             {Object.entries(sponsors).map(([level, sponsors]) => {
                 return <>
                     {sponsors.length != 0 &&
@@ -55,7 +55,8 @@ const SponsorsPage = () => {
                             <h3>{`${level} sponsor${sponsors.length == 1 ? "" : "s"}`}</h3>
                             <div className={`logos ${level === 'platinum' ? 'platinum-logos' : ''}`}>
                                 {sponsors.map((img) => {
-                                    return <div className={`sponsor-card ${level}`}><img className='sponsor-logo' src={img} /></div>
+                                    const name = img.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
+                                    return <img key={img} className={`sponsor-logo ${level} ${img.includes('Robofusion') ? 'robofusion' : ''}`} src={img} alt={`${name} logo`} />
                                 })}
                             </div>
                         </div>
@@ -66,11 +67,12 @@ const SponsorsPage = () => {
         </section>
         
 
-        <section className='sponsor-logos'>
+        <section className='sponsor-logos special-thanks'>
             <h2>And special thanks to...</h2>
             <div className='logos'>
                 {special_thanks.map((img) => {
-                    return <div className="sponsor-card silver"><img className='sponsor-logo' src={img} /></div>
+                    const name = img.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
+                    return <img key={img} className="sponsor-logo special" src={img} alt={`${name} logo`} />
                 })}
             </div>
         </section>

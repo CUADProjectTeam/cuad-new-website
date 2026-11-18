@@ -200,13 +200,7 @@ const MembersPage = () => {
               <div className="member-card-info">
                 <h3 className="member-name">{lead.name}</h3>
                 <p className="member-role">{lead.team}</p>
-                {(lead.year || lead.major) && (
-                  <p className="member-meta">
-                    {lead.year && `${lead.year}`}
-                    {lead.year && lead.major && ' · '}
-                    {lead.major}
-                  </p>
-                )}
+                {lead.year && <p className="member-meta">{lead.year}</p>}
               </div>
             </div>
           ))}
@@ -230,13 +224,7 @@ const MembersPage = () => {
                 <img src={member.image} alt={member.name} className="member-image" loading="lazy" />
                 <div className="member-card-info">
                   <h3 className="member-name">{member.name}</h3>
-                  {(member.year || member.major) && (
-                    <p className="member-meta">
-                      {member.year && `${member.year}`}
-                      {member.year && member.major && ' · '}
-                      {member.major}
-                    </p>
-                  )}
+                  {member.year && <p className="member-meta">{member.year}</p>}
                 </div>
               </div>
             ))}

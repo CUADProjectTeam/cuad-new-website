@@ -3,11 +3,11 @@ import './TeamsPage.css';
 import ImageCarousel from '../components/ImageCarousel';
 import PageHeader from '../components/PageHeader';
 
-const Team = ({ title, description, images }) => {
+const Team = ({ title, description, images, imageFit = 'cover' }) => {
     return (
-        <section className="team-section">
+        <section className={`team-section${title === 'Business' ? ' team-section-business' : ''}`}>
             <div className='team-images'>
-                <ImageCarousel images={images} />
+                <ImageCarousel images={images} fit={imageFit} />
             </div>
             <div className="description">
                 <h1>{title}</h1>
@@ -32,6 +32,7 @@ const teams = {
     },
     "Business": {
         description: "Extreme engineering comes with extreme cost. The business team handles CUAD’s fundraising, marketing, community outreach, and business development. The team is also responsible for finances, website development, media, video editing, and component procurement.",
+        imageFit: ['contain', 'cover', 'cover'],
         images: ['./images/sponsor-front.png', './images/business1.webp', './images/business.webp']
     }
 }
@@ -50,6 +51,7 @@ const TeamsPage = () => {
                     title={title}
                     description={values.description}
                     images={values.images}
+                    imageFit={values.imageFit}
                 />
             ))}
         </div>

@@ -68,6 +68,22 @@
     text-transform: uppercase;
 }
 
+.content-container .stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 2vw, 24px);
+}
+
+.content-container .stat-item {
+    min-width: 0;
+    text-align: center;
+}
+
+.content-container .stat-item h1 {
+    font-size: clamp(1.75rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
 #graveyard {
     font-family: var(--font-display);
     font-weight: 300;
@@ -118,8 +134,8 @@
         font-size: .75em !important;
     }
 
-    .stat-item h1 {
-        font-size: 16vw !important;
+    .content-container .stat-item h1 {
+        font-size: clamp(1.5rem, 7vw, 2.4rem);
     }
 
     .images {

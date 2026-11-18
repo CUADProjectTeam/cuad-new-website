@@ -33,8 +33,10 @@ const ImageCarousel = ({ images, fit = 'cover' }) => {
         );
     };
 
+    const currentFit = Array.isArray(fit) ? fit[currentIndex] || 'cover' : fit;
+
     return (
-        <div className={`carousel carousel-${fit}`}>
+        <div className={`carousel carousel-${currentFit}`}>
             {images.length > 1 && <button className="carousel-button prev" onClick={prevSlide}>
                 &#10094;
             </button>}
